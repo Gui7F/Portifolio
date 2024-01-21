@@ -1,0 +1,186 @@
+/* Estilo Geral */
+*{
+    margin: 0;
+    padding: 0;
+    border: border-box;
+    background-color: #334980;
+    font-family: "DM Sans", sans-serif;
+}
+
+body{
+    background-color: #334980
+}
+
+.interface{
+    max-width: 80%;
+    margin: auto;
+}
+
+.interface h2 span{
+    color: #e69a01;
+}
+h2.titulo{
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    font-size: 2.5em;
+}
+
+
+/* Estilo Header */
+
+header > .interface{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+header a{
+    text-decoration: none;
+    color: rgb(160, 160, 160);
+    font-size: 1.1em;
+}
+.interface .logo :hover{
+    cursor: pointer;
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;   
+}
+.menu li{
+   margin-left: 100px;
+}
+
+.menu ul li a:hover{
+   color: white;
+   background-color: #e69a018f;
+   padding: 5px;
+   padding-inline: 20px;
+   font-size: 1.2em;
+   border-radius: 10px;
+   transform: scale(1.2);
+   transition: 0.5s;
+}
+
+.contato{
+    display: flex;
+}
+.contato a{
+    margin-left: 10px;
+}
+
+/* Site Topo */
+section .topo-site{
+    height: 100vh;
+    margin-top: 100px;
+}
+section .flex-display{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section .texto-topo{
+    color: white;   
+}
+section .texto-topo h1{
+    font-size: 4em;
+    font-weight: 700;
+    line-height: 70px;
+    margin-top: 100px;
+}
+
+section .texto-topo p{
+    font-weight: 100;
+    font-size: 1.6em;
+    margin-top: 80px;
+    padding-bottom: 20px;
+}
+section .texto-topo span{
+    color: #e69a01;
+}
+section .foto-topo img{
+    width:100dvh;
+    height: 65dvh;
+    margin: auto;
+    /* padding-top:30vh; */
+}
+
+/* Projetos */
+
+section.projetos{
+    margin-top: 300px;
+    padding:40px,4%;
+    height: 100vh ;
+}
+.projetos .projetos-box{
+    padding: 40px;
+    height: 400px;
+    
+}
+.projetos .projetos-box:hover{
+    border: solid #e69a01a3 ;
+    border-radius: 10px; 
+    box-shadow: 1px 2px 12px -1px rgba(0, 0, 0, 0.533);
+    transition: 0.3s;
+    transform: scale(1.05);
+    color: white;
+}
+
+section .flex-display{
+    gap: 40px;
+}
+.projetos .projetos-box i{
+    font-size: 5em;
+    color: #e69a01; 
+}
+
+/* Habilidades */
+
+section.habilidades{
+    padding-top: 100px;
+    padding-bottom: 300px;
+}
+
+div.flex-display{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-left: 160px;
+}
+
+div.habilidade-box{
+    padding-right: 200px;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 100;
+    cursor: pointer;
+    position:relative;
+      
+}
+div.habilidade-box:hover{
+   transform: scale(1.2);
+
+}
+p.txt-value-html{
+  position:absolute;
+  background-color: #07070731;
+}
+p.txt-value-css{
+    position:absolute;
+    background-color: #07070731;
+  }
+p.txt-value-js{
+    position:absolute;
+    background-color: #07070731;
+ }
+ p.txt-value-react{
+    position:absolute;
+    background-color: #07070731;
+ }
+
+ p.txt-value-git{
+    position:absolute;
+    background-color: #07070731
+ }
+
