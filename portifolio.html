@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./assets/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="assets/imagem/favicon.png" type="image/x-icon">
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
         rel="stylesheet"> <!--Fonte Google Font-->
@@ -15,15 +16,15 @@
     <!-- fim BootStrap icons -->
     <!-- AnimationBasic -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-     <!-- AnimationBasic -->
-    <title>Portifólio</title>
+    <!-- AnimationBasic -->
+    <title>Gui.DEV</title>
 </head>
 
 <body>
     <header>
         <div class="interface">
             <div class="logo">
-                <img src="./assets/imagem/logo_250.png" alt="Logo da pagina" id="foto-logo">
+                <img src="./assets/imagem/logo2.png" alt="Logo da pagina" class="foto-logo">
             </div>
             <div class="menu">
                 <ul>
@@ -33,7 +34,6 @@
                     <li><a href="#">Conheça-me</a></li>
                 </ul>
             </div>
-            <div class="contato">
         </div><!--Termina interface-->
     </header>
     <main>
@@ -49,17 +49,19 @@
                             quero expandir, construir, descobrir e desenvolver novas formas de pensar e resolver
                             problemas com tecnologia.<span>&quot;</span>
                         </p>
-                        <a href="https://github.com/Gui7F" target="_blank"><img src="./assets/imagem/github.png" alt="GitHub"></a>
-
-                        <a href="https://www.linkedin.com/in/gui-web-developer/" target="_blank">
-                            <img src="./assets/imagem/linkedin.png" alt="LinkdIn"></a>
-        
-                        <a href="#"><img src="./assets/imagem/gmail.png" alt="Gmail"></a>
-        
-                        <a href="https://wa.me/5516988287084?text=Olá%20Gui%20Tudo%20bem?" target="_blank">
-                            <img src="./assets/imagem/whatsapp.png" alt="WhatsApp"></a>
-        
-                        <a href="#"><img src="./assets/imagem/curriculo.png" alt=""></a>
+                        <div>
+                            <a href="https://github.com/Gui7F" target="_blank" class="icones">
+                                    <i class="bi bi-github"></i></a>
+                             <a href="https://www.linkedin.com/in/gui-web-developer/" target="_blank"
+                                    class="icones">
+                                    <i class="bi bi-linkedin"></i></a>
+                            <a href="#" class="icones"><i class="bi bi-envelope-at-fill"></i></a>
+                            <a href="https://wa.me/5516988287084?text=Olá%20Gui%20Tudo%20bem?" target="_blank"
+                                    class="icones">
+                                    <i class="bi bi-whatsapp"></i></a>
+                            <a href="#" class="icones"><i
+                                        class="bi bi-file-earmark-person-fill"></i></a>
+                        </div>
                     </div>
                     <div class="foto-topo">
                         <img src="./assets/imagem/Ilustração Portifolio 2.png" alt="Ilustração">
@@ -67,6 +69,7 @@
                 </div>
             </div> <!--Termina interface-->
         </section>
+
         <section class="projetos">
             <div class="interface">
                 <h2 class="titulo">Meus <span>Projetos.</span></h2>
@@ -128,42 +131,112 @@
                 </div>
             </div>
         </section>
+
         <section class="habilidades">
             <div class="interface">
                 <h2 class="titulo">Minhas <span>Habilidades.</span></h2>
-                <div class="flex-display">
+                <div class="flex-skill">
                     <div class="habilidade-box">
-                        <img src="./assets/imagem/html-5.png" alt="Html Habilidade" class="txt-html" >
-                        <p class="txt-value-html"></p>
+                        <img src="./assets/imagem/html-5.png" alt="Html Habilidade" class="txt-html">
+                        <p class="txt-value-html">Em linguística, a noção de texto é ampla e ainda aberta a uma
+                            definição mais precisa.
+                            Grosso modo, pode ser entendido como manifestação linguística das ideias de um autor,
+                            que serão interpretadas pelo leitor de acordo com seus conhecimentos linguísticos e
+                            culturais. Seu tamanho é variável.</p>
                     </div>
                     <div class="habilidade-box">
-                        <img src="./assets/imagem/css-3.png" alt="Html Habilidade" class="txt-css" >
-                        <p class="txt-value-css"></p>
+                        <img src="./assets/imagem/css-3.png" alt="Css Habilidade" class="txt-css">
+                        <p class="txt-value-css">Em linguística, a noção de texto é ampla e ainda aberta a uma definição
+                            mais precisa.
+                            Grosso modo, pode ser entendido como manifestação linguística das ideias de um autor, que
+                            serão interpretadas
+                            pelo leitor de acordo com seus conhecimentos linguísticos e culturais.
+                            Seu tamanho é variável.</p>
                     </div>
                     <div class="habilidade-box">
-                        <img src="./assets/imagem/js.png" alt="Html Habilidade" class="txt-js" >
-                        <p class="txt-value-js"></p>
+                        <img src="./assets/imagem/js.png" alt="Java Script Habilidade" class="txt-js">
+                        <p class="txt-value-js">Em linguística, a noção de texto é ampla e ainda aberta a uma definição
+                            mais precisa.
+                            Grosso modo, pode ser entendido como manifestação linguística das ideias de um autor, que
+                            serão interpretadas
+                            pelo leitor de acordo com seus conhecimentos linguísticos e culturais. Seu tamanho é
+                            variável.</p>
+                    </div>
+                </div>
+                <div class="flex-skill2">
+                    <div class="habilidade-box">
+                        <img src="./assets/imagem/React.png" alt="React Habilidade" class="txt-react"
+                            style="padding: 0,;">
+                        <p class="txt-value-react">Em linguística, a noção de texto é ampla e ainda aberta a uma
+                            definição mais precisa.
+                            Grosso modo, pode ser entendido como manifestação linguística das ideias de um autor, que
+                            serão
+                            interpretadas pelo leitor de acordo com seus conhecimentos linguísticos e culturais. Seu
+                            tamanho é variável.</p>
                     </div>
                     <div class="habilidade-box">
-                        <img src="./assets/imagem/React.png" alt="Html Habilidade" class="txt-react" style="padding: 0,;">
-                        <p class="txt-value-react"></p>
+                        <img src="./assets/imagem/node-js.png" alt="Node.js Habilidade" class="txt-node">
+                        <p class="txt-value-node">Em linguística, a noção de texto é ampla e ainda aberta a uma
+                            definição mais precisa.
+                            Grosso modo, pode ser entendido como manifestação linguística das ideias de um autor,
+                            que serão interpretadas pelo leitor de acordo com seus conhecimentos linguísticos e
+                            culturais. Seu tamanho é variável.</p>
                     </div>
                     <div class="habilidade-box">
-                        <img src="./assets/imagem/git.png" alt="Html Habilidade" class="txt-git" >
-                        <p class="txt-value-git"></p>
+                        <img src="./assets/imagem/git.png" alt="Git Habilidade" class="txt-git">
+                        <p class="txt-value-git">Em linguística, a noção de texto é ampla e ainda aberta a uma definição
+                            mais precisa.
+                            Grosso modo, pode ser entendido como manifestação linguística das ideias de um autor,
+                            que serão interpretadas pelo leitor de acordo com seus conhecimentos linguísticos e
+                            culturais. Seu tamanho é variável.</p>
                     </div>
                 </div>
             </div>
         </section>
+
         <section class="sobremim">
-            <div class="interface">
+            <div class="interface-mim">
                 <div class="flex-display">
-                    <img src="./assets/imagem/Minha Foto.png" alt="Foto do profissional dono do portifolio">
-                    <h2 class="titulo">Sobre <Span>Mim.</Span></h2>
+                    <div class="img-sobremim">
+                        <img class="foto-sobre" src="./assets/imagem/Minha Foto.png"
+                            alt="Foto do profissional dono do portifolio">
+                    </div>
+                    <div class="txt-sobre-mim">
+                        <h2 class="titulo-sobre-mim">Sobre <span class="span-mim">Mim.</span></h2>
+                        <p class="sobre-mim">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate
+                            laboriosam doloribus
+                            odio soluta quidem vitae non, aperiam enim,
+                            quae esse fugit similique. Sit molestias pariatur incidunt, esse ducimus hic numquam?</p>
+                        <p class="sobre-mim">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate
+                            laboriosam doloribus
+                            odio soluta quidem vitae non, aperiam enim,
+                            quae esse fugit similique. Sit molestias pariatur incidunt, esse ducimus hic numquam?</p>
+                        <div>
+                           <a href="https://github.com/Gui7F" target="_blank" class="icones">
+                                    <i class="bi bi-github"></i></a>
+                            <a href="https://www.linkedin.com/in/gui-web-developer/" target="_blank"
+                                    class="icones">
+                                    <i class="bi bi-linkedin"></i></a>
+                           <a href="https://mail.google.com/mail/?view=cm&fs=1&to=gui643216@gmail.com" target="_blank" class="icones">
+                            <i class="bi bi-envelope-at-fill"></i></a>
+                           <a href="https://wa.me/5516988287084?text=Olá%20Gui%20Tudo%20bem?" target="_blank"
+                                    class="icones">
+                                    <i class="bi bi-whatsapp"></i></a><a href="#" class="icones"><i
+                                        class="bi bi-file-earmark-person-fill"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
+    <footer>
+        <div class="footer-body">
+            <div class="flex-display">
+                <p class="footerP">Agradeço por visitar meu portifolio!</p>
+                <p class="footerP">Guilherme Ribeiro <i class="bi bi-c-circle"></i></p>
+            </div>
+        </div>
+    </footer>
 
     <script src="./assets/main.js"></script>
 </body>
