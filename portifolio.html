@@ -23,16 +23,19 @@
 <body>
     <header>
         <div class="interface">
-            <div class="logo">
-                <img src="./assets/imagem/logo2.png" alt="Logo da pagina" class="foto-logo">
+            <div class="flex-display">
+                <div class="fixed">
+                <div class="logo">
+                    <img src="./assets/imagem/logo2.png" alt="Logo da pagina" class="foto-logo">
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Projetos</a></li>
+                        <li><a href="#">Habilidades</a></li>
+                        <li><a href="#">Conheça-me</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Projetos</a></li>
-                    <li><a href="#">Habilidades</a></li>
-                    <li><a href="#">Conheça-me</a></li>
-                </ul>
             </div>
         </div><!--Termina interface-->
     </header>
@@ -51,16 +54,14 @@
                         </p>
                         <div>
                             <a href="https://github.com/Gui7F" target="_blank" class="icones">
-                                    <i class="bi bi-github"></i></a>
-                             <a href="https://www.linkedin.com/in/gui-web-developer/" target="_blank"
-                                    class="icones">
-                                    <i class="bi bi-linkedin"></i></a>
+                                <i class="bi bi-github"></i></a>
+                            <a href="https://www.linkedin.com/in/gui-web-developer/" target="_blank" class="icones">
+                                <i class="bi bi-linkedin"></i></a>
                             <a href="#" class="icones"><i class="bi bi-envelope-at-fill"></i></a>
                             <a href="https://wa.me/5516988287084?text=Olá%20Gui%20Tudo%20bem?" target="_blank"
-                                    class="icones">
-                                    <i class="bi bi-whatsapp"></i></a>
-                            <a href="#" class="icones"><i
-                                        class="bi bi-file-earmark-person-fill"></i></a>
+                                class="icones">
+                                <i class="bi bi-whatsapp"></i></a>
+                            <a href="#" class="icones"><i class="bi bi-file-earmark-person-fill"></i></a>
                         </div>
                     </div>
                     <div class="foto-topo">
@@ -138,21 +139,33 @@
                 <div class="flex-skill">
                     <div class="habilidade-box">
                         <img src="./assets/imagem/html-5.png" alt="Html Habilidade" class="txt-html">
-                        <p class="txt-value-html">Em linguística, a noção de texto é ampla e ainda aberta a uma
-                            definição mais precisa.
-                            Grosso modo, pode ser entendido como manifestação linguística das ideias de um autor,
-                            que serão interpretadas pelo leitor de acordo com seus conhecimentos linguísticos e
-                            culturais. Seu tamanho é variável.</p>
+                        <p class="txt-value-html">Construção de estruturas semânticas, bem otimizada para os motores de
+                            busca dos navegadores
+                            padrões na construção da estrutura HTML, como a que foi inclusive utilizada na criação deste
+                            portifolio, consigo criar
+                            estruturas de classes bem organizadas que servem posteriomente para uma boa manipulação do
+                            DOM, páginas bem estrturadas
+                            é o primeiro passo para construção de um site profissional.
+                        </p>
                     </div>
                     <div class="habilidade-box">
                         <img src="./assets/imagem/css-3.png" alt="Css Habilidade" class="txt-css">
-                        <p class="txt-value-css">Em linguística, a noção de texto é ampla e ainda aberta a uma definição
-                            mais precisa.
-                            Grosso modo, pode ser entendido como manifestação linguística das ideias de um autor, que
-                            serão interpretadas
-                            pelo leitor de acordo com seus conhecimentos linguísticos e culturais.
-                            Seu tamanho é variável.</p>
-                    </div>
+                        <p class="txt-value-css">Sites responsivos, design atualizado, sigo estudando diariamente <br> essa
+                            tecnologia de estilização, frameworks como
+                            <a href="https://tailwindcss.com/" target="_blank" rel="" class="citado">Taillwind</a> e <br>
+                            <a href="https://getbootstrap.com/" target="_blank" class="citado">BootStrap</a> utilizo
+                            bastante,
+                            porem gosto muito de criar coisas <br> com CSS puro, ja que consigo por em prática muito recurso
+                            personalizado, com as animações costumo pesquisar bastante ou utilizar libs CSS e JS como
+                            <a href="https://gsap.com/" target="_blank" class="citado">GSAP</a>, porem é estudo recente
+                            mais estou aprendendo bastante como
+                            utilizar e otimizar animações, levo sempre em cosideração ciências como tipográfia de fontes
+                            e psicológia das cores para criar
+                            boas experiências de usuário.
+                        </p>
+                    </div>  
+                </div>
+                <div class="flex-skill">
                     <div class="habilidade-box">
                         <img src="./assets/imagem/js.png" alt="Java Script Habilidade" class="txt-js">
                         <p class="txt-value-js">Em linguística, a noção de texto é ampla e ainda aberta a uma definição
@@ -160,10 +173,15 @@
                             Grosso modo, pode ser entendido como manifestação linguística das ideias de um autor, que
                             serão interpretadas
                             pelo leitor de acordo com seus conhecimentos linguísticos e culturais. Seu tamanho é
-                            variável.</p>
+                            variável.
+                            Em linguística, a noção de texto é ampla e ainda aberta a uma definição
+                            mais precisa.
+                            Grosso modo, pode ser entendido como manifestação linguística das ideias de um autor, que
+                            serão interpretadas
+                            pelo leitor de acordo com seus conhecimentos linguísticos e culturais. Seu tamanho é
+                            variável.
+                        </p>
                     </div>
-                </div>
-                <div class="flex-skill2">
                     <div class="habilidade-box">
                         <img src="./assets/imagem/React.png" alt="React Habilidade" class="txt-react"
                             style="padding: 0,;">
@@ -174,6 +192,8 @@
                             interpretadas pelo leitor de acordo com seus conhecimentos linguísticos e culturais. Seu
                             tamanho é variável.</p>
                     </div>
+                </div>
+                <div class="flex-skill">
                     <div class="habilidade-box">
                         <img src="./assets/imagem/node-js.png" alt="Node.js Habilidade" class="txt-node">
                         <p class="txt-value-node">Em linguística, a noção de texto é ampla e ainda aberta a uma
@@ -203,26 +223,37 @@
                     </div>
                     <div class="txt-sobre-mim">
                         <h2 class="titulo-sobre-mim">Sobre <span class="span-mim">Mim.</span></h2>
-                        <p class="sobre-mim">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate
-                            laboriosam doloribus
-                            odio soluta quidem vitae non, aperiam enim,
-                            quae esse fugit similique. Sit molestias pariatur incidunt, esse ducimus hic numquam?</p>
-                        <p class="sobre-mim">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate
-                            laboriosam doloribus
-                            odio soluta quidem vitae non, aperiam enim,
-                            quae esse fugit similique. Sit molestias pariatur incidunt, esse ducimus hic numquam?</p>
+                        <p class="sobre-mim">Meu nome é Guilherme Ribeiro, tenho 24 anos, sou estudante de Analise e
+                            Desenvolvimento de Sistemas,
+                            eu tenho dois filhos o Theo e a Eloa, são minha paixão e um dos motivos de estar entrando
+                            para área do desenvolvimento de
+                            software, desde muito novo sempre fui apaixonado por games e tecnologias, a cada novo avanço
+                            no mundo tech eu vibrava como se
+                            a humaninadade tivesse vencido uma batalha, foi então com 21 anos, que descobrir que toda
+                            tecnologia leva um código em sua construção.
+                        </p>
+                        <p class="sobre-mim">Foi assim que decidir ingressar na universidade, e aprender sobre tudo
+                            desde a origem dos computadores até os sistemas de redes e
+                            protocolos, depois de muitos livros sobre área de Sistemas da informação e Engenharia de
+                            Software, decidi seguir para área do desenvolvimento, e hoje estou á procura da minha
+                            primeira
+                            oportunidade, para atuar como Junior ou aprendiz, tenho sede de aprender coisas novas e sou
+                            fã de pessoas com conhecimento que eu quero ter
+                            sei o valor do saber, e a importância do trabalho em equipe, espero que seja você quem esta
+                            lendo isso, meu começo nessa jornada incrivel.
+                        </p>
                         <div>
-                           <a href="https://github.com/Gui7F" target="_blank" class="icones">
-                                    <i class="bi bi-github"></i></a>
-                            <a href="https://www.linkedin.com/in/gui-web-developer/" target="_blank"
-                                    class="icones">
-                                    <i class="bi bi-linkedin"></i></a>
-                           <a href="https://mail.google.com/mail/?view=cm&fs=1&to=gui643216@gmail.com" target="_blank" class="icones">
-                            <i class="bi bi-envelope-at-fill"></i></a>
-                           <a href="https://wa.me/5516988287084?text=Olá%20Gui%20Tudo%20bem?" target="_blank"
-                                    class="icones">
-                                    <i class="bi bi-whatsapp"></i></a><a href="#" class="icones"><i
-                                        class="bi bi-file-earmark-person-fill"></i></a>
+                            <a href="https://github.com/Gui7F" target="_blank" class="icones">
+                                <i class="bi bi-github"></i></a>
+                            <a href="https://www.linkedin.com/in/gui-web-developer/" target="_blank" class="icones">
+                                <i class="bi bi-linkedin"></i></a>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=gui643216@gmail.com" target="_blank"
+                                class="icones">
+                                <i class="bi bi-envelope-at-fill"></i></a>
+                            <a href="https://wa.me/5516988287084?text=Olá%20Gui%20Tudo%20bem?" target="_blank"
+                                class="icones">
+                                <i class="bi bi-whatsapp"></i></a><a href="#" class="icones"><i
+                                    class="bi bi-file-earmark-person-fill"></i></a>
                         </div>
                     </div>
                 </div>

@@ -9,7 +9,6 @@
 body{
     background-color: #334980
 }
-
 .interface{
     max-width: 80%;
     margin: auto;
@@ -44,11 +43,6 @@ div > a.icones:hover{
 
 /* Estilo Header */
 
-header > .interface{
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
-}
 header a{
     text-decoration: none;
     color: rgb(160, 160, 160);
@@ -57,9 +51,15 @@ header a{
 .interface .logo :hover{
     cursor: pointer;
 }
+div.fixed{
+    position: fixed;
+    left:50vmax;
+}
 
 div.menu{
     margin: auto;
+    position: fixed;
+    top: 50px;
 }
 
 .menu ul{
@@ -84,6 +84,11 @@ div.menu{
 img.foto-logo{
   max-width: 150px;
   height: 150px;
+  position: fixed;
+  top:auto;
+  left:20%;
+  margin-left: 20px;
+
 }
 
 /* Site Topo */
@@ -157,16 +162,11 @@ section.habilidades{
 div.flex-skill{
     display: flex;
     justify-content:space-between;
-    align-items: center;
+    align-items: stretch;
     margin-left: 160px;
     margin-bottom: 200px;
 }
-div.flex-skill2{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    margin-left: 160px;
-}
+
 
 div.habilidade-box{
     padding-right: 200px;
@@ -180,6 +180,13 @@ div.habilidade-box{
 div.habilidade-box:hover{
    transform: scale(1.2);
 
+}
+a.citado{
+    text-decoration: none;
+    color: #ffaa00fb;
+}
+a.citado:hover{
+    text-decoration: underline;
 }
 
  
