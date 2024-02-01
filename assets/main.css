@@ -66,7 +66,7 @@ div.menu{
 .menu ul{
     display: flex;
     list-style: none; 
-    margin-left: 50%;  
+    margin-left: 35%;  
 }
 .menu li{
    margin-left: 100px;
@@ -169,35 +169,17 @@ section.habilidades{
 
 div.flex-skill{
     display: flex;
-    justify-content:space-between;
-    align-items: stretch;
-    margin-left: 160px;
+    justify-content:space-around;
+    align-items: center;
     margin-bottom: 200px;
 }
 
-
-div.habilidade-box{
-    padding-right: 200px;
-    color: white;
-    font-size: 1.2em;
-    font-weight: 100;
-    cursor: pointer;
-    position:relative;
-      
-}
-div.habilidade-box:hover{
-   transform: scale(1.2);
-
-}
-a.citado{
-    text-decoration: none;
-    color: #ffaa00fb;
-}
-a.citado:hover{
-    text-decoration: underline;
+img.image-tech:hover{
+   transform: scale(0.9);
+   cursor: pointer;
 }
 
- 
+
 /* Sobre Mim */
 section.sobremim{
     padding: 40px, 4%;
@@ -222,6 +204,9 @@ div.interface-mim{
     max-width: 60%;
     margin: auto;
 }
+
+
+
 /* Footer */
 
 p.footerP{
