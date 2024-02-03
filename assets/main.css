@@ -43,8 +43,8 @@ div > a.icones:hover{
 
 /* Estilo Header */
 
-header a{
-    text-decoration: none;
+.menu a{
+    list-style-type: none;
     color: rgb(160, 160, 160);
     font-size: 1.1em;
 }
@@ -88,7 +88,7 @@ img.foto-logo{
   height: 70px;
   position: fixed;
   top:0;
-  left:20%;
+  left:10%;
   bottom:20px ;
   margin-left: 20px;
   z-index:2;
@@ -98,10 +98,79 @@ img.foto-logo:hover{
     height: 90px;
 }
 
+ /* Estilo menu mobile */
+
+ .menu-mobile{
+    background-color:#334980;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
+}
+.menu-mobile.open-menu{
+    width: 70%;
+}
+
+
+.menu-mobile nav ul{
+  text-align: right;
+  
+}
+
+div.menu-mobile nav ul li {
+    font-weight: 300px;
+    list-style-type: none;
+}
+
+div.menu-mobile nav ul li a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding: 20px 8%;
+    font-size: 20px;
+}
+div.menu-mobile nav ul li a:hover{
+   background-color: #e69a01;
+   color: black;
+}
+
+div.btn-fechar{
+    padding: 20px 5%;
+    font-size: 25px;
+    color: #e69a01;
+}
+
+div.btn-abri-menu-mobile i{
+    color: #e69a01;
+}
+
+div.abrir-menu-mobile{
+    color: #e69a01;
+    text-align: right;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 20px  10%;
+    font-size: 25px;
+    z-index: 77777;
+    display: none;
+}
+/* div.overlay-menu{
+    background-color: rgba(0, 0, 0, 0.11);
+    width: 100vh;
+    height: 100vh;
+    position: fixed;
+    z-index: 88888;
+} */
+
+
 /* Site Topo */
 section.topo-site{
-    height: 100vh;
-    margin-top: 100px;
+    padding: 40px 4%;
 }
 
 section .texto-topo{
@@ -123,20 +192,13 @@ section .texto-topo p{
 section .texto-topo span{
     color: #e69a01;
 }
-img.foto-topo{
-    margin-top: 100px;
-    width:100vh;
-    height:700px;
-    margin: auto;
-    /* padding-top:30vh; */
-}
 
 /* Projetos */
 
 section.projetos{
     margin-top: 100px;
     padding:40px,4%;
-    height: 100vh ;
+    margin-bottom: 300px;
 }
 .projetos .projetos-box{
     padding: 40px;
@@ -163,7 +225,7 @@ section .flex-display{
 /* Habilidades */
 
 section.habilidades{
-    padding-top: 100px;
+    margin-top: 100px;
     padding-bottom: 300px;
 }
 
@@ -223,3 +285,56 @@ footer{
 }
 
 
+@media screen and (max-width: 1320px){
+    
+    /* Estilo Geral */
+
+    .flex-display{
+        flex-direction: column;
+    }
+
+    a.icones{
+        color: #e69a019a;
+        font-size: 25px;
+        text-align: center;
+        margin: 10px;
+    }
+
+    /* Menu */
+    .menu{
+        display: none;
+    }
+    
+    img.foto-logo{
+        left:0;
+    }
+   
+    /* Site Topo */
+    section .texto-topo h1{
+        font-size: 38px;
+        line-height: 40px;
+        margin-top: 50px;
+    }
+    section .texto-topo p{
+        font-size: 20px;
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    /* Sobre mim */
+    div.interface-mim{
+        max-width: 80%;
+
+    }
+
+    .foto-sobre img{
+        width: 100%;
+    }
+    
+
+    div.abrir-menu-mobile{
+        display: block;
+    }
+
+
+}
