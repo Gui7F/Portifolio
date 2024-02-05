@@ -6,6 +6,6 @@ botaoMenu.addEventListener('click', () =>{
     menuMobile.classList.add('open-menu')
 })
 
-botaoFecha.addEventListener('click', () =>{
+menuMobile.addEventListener('click', () =>{
     menuMobile.classList.remove('open-menu')
 })

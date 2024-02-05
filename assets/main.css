@@ -5,6 +5,9 @@
     border: border-box;
     font-family: "DM Sans", sans-serif;
 }
+html{
+    scroll-behavior: smooth ;
+}
 
 body{
     background-color: #334980
@@ -23,6 +26,7 @@ h2.titulo{
     font-weight: 700;
     color: white;
     font-size: 2.5em;
+    margin-top: 150px;
 }
 div.flex-display{
     display: flex;
@@ -44,6 +48,7 @@ div > a.icones:hover{
 /* Estilo Header */
 
 .menu a{
+    text-decoration: none;
     list-style-type: none;
     color: rgb(160, 160, 160);
     font-size: 1.1em;
@@ -74,13 +79,12 @@ div.menu{
 }
 
 .menu ul li a:hover{
-   color: white;
+   color:black;
    background-color: #e69a018f;
    padding: 5px;
    padding-inline: 20px;
-   font-size: 1.4em;
+   font-size: 1.2em;
    border-radius: 10px;
-   transform: scale(1.2);
    transition: 0.5s;
 }
 img.foto-logo{
@@ -91,11 +95,13 @@ img.foto-logo{
   left:10%;
   bottom:20px ;
   margin-left: 20px;
-  z-index:2;
+  z-index:9999999;
 }
-img.foto-logo:hover{
-    width: 120px;
-    height: 90px;
+
+.foto-mobile img{
+    width: 200px;
+    height: 220px;
+    display: none;
 }
 
  /* Estilo menu mobile */
@@ -158,6 +164,8 @@ div.abrir-menu-mobile{
     font-size: 25px;
     z-index: 77777;
     display: none;
+    background-color:#334980;
+    width: 100vh;
 }
 /* div.overlay-menu{
     background-color: rgba(0, 0, 0, 0.11);
@@ -165,12 +173,13 @@ div.abrir-menu-mobile{
     height: 100vh;
     position: fixed;
     z-index: 88888;
-} */
+}  */
 
 
 /* Site Topo */
 section.topo-site{
     padding: 40px 4%;
+    padding-bottom: 120px;
 }
 
 section .texto-topo{
@@ -222,11 +231,11 @@ section .flex-display{
     color: #e69a01; 
 }
 
-/* Habilidades */
+/* Tecnologias */
 
 section.habilidades{
-    margin-top: 100px;
-    padding-bottom: 300px;
+    padding: 40px 4%;
+    /* padding-bottom: 300px; */
 }
 
 div.flex-skill{
@@ -276,13 +285,19 @@ p.footerP{
    margin-top:25px ;
    color: white;
    font-size: 1.3em;
-   max-width: 60%;
-   margin-inline: 100px;
    font-weight: 300;
+   text-align:start;
 }
 footer{
+    padding: 0 4%;
     background-color:#e69a01a2;
 }
+
+.flex-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
 
 
 @media screen and (max-width: 1320px){
@@ -298,6 +313,23 @@ footer{
         font-size: 25px;
         text-align: center;
         margin: 10px;
+    }
+    div > a.icones:hover{
+        font-size: 1.5em;
+        color: #e69a01;
+    }
+
+    h2.titulo{
+        color: white;
+        font-size: 25px;
+    }
+    .foto-mobile img{
+        width: 100%;
+        height: 300px;
+        display: block;
+    }
+    img.foto-sobre {
+        display: none;
     }
 
     /* Menu */
@@ -320,21 +352,53 @@ footer{
         margin-top: 20px;
         padding-bottom: 20px;
     }
+
+
+
+    /* Tecnologias */
+    div.flex-skill{
+        flex-direction:row;
+        margin: 0%;
+    }
+
+    img.image-tech{
+        transform: scale(0.5);
+    }
+    img.image-tech:hover{
+        transform: scale(0.4);
+        cursor: pointer;
+     }
+
+    section.habilidades{
+        margin: 0;
+        padding-top: 0;
+    }
     
     /* Sobre mim */
     div.interface-mim{
         max-width: 80%;
 
     }
-
-    .foto-sobre img{
-        width: 100%;
-    }
     
 
     div.abrir-menu-mobile{
         display: block;
     }
+    
+    section.sobremim{
+        margin-top: 150px;
+        font-size: 12px;
+    }
+   
+    /* Footer */
 
+    .flex-footer{
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
+    p.footerP{
+        font-size: 12px;
+    }
+    
 }
