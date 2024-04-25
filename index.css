@@ -80,7 +80,7 @@ div.menu{
 
 .menu ul li a:hover{
    color:black;
-   background-color: #e69a018f;
+   background-color:#e69a01;
    padding: 5px;
    padding-inline: 20px;
    font-size: 1.2em;
@@ -248,7 +248,8 @@ section.projetos{
 .projeto-desc p{
     margin: 10px;
     color: white;
-    font-size: 1.1em;
+    font-size: 1.2em;
+    font-weight:100;
 }
 .links{
     display: flex;
@@ -258,6 +259,11 @@ section.projetos{
 .links a{
     text-decoration: none;
     margin: 10px;
+    background-color: #e69a01;
+    color: #334980;
+    padding: 7px;
+    border-radius: 5px;
+    font-weight: 600;
 }
 
 section .flex-display{
@@ -390,12 +396,18 @@ footer{
         padding-bottom: 20px;
     }
 
+    /* Projetos */
+    .projetos .projetos-box{
+        width: 100%;
+    }
+
 
 
     /* Tecnologias */
     div.flex-skill{
         flex-direction:row;
-        margin: 0%;
+        margin:0%;
+        justify-content: center;
     }
 
     img.image-tech{
@@ -407,7 +419,7 @@ footer{
      }
 
     section.habilidades{
-        margin: 0;
+        margin:auto;
         padding-top: 0;
     }
     
