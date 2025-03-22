@@ -18,6 +18,7 @@ function Navbar({
   homeRef,
   aboutMeRef,
   serviceRef,
+  projectRef,
   contactRef,
   stackRef,
 }) {
@@ -34,6 +35,8 @@ function Navbar({
         return aboutMeRef;
       case "service":
         return serviceRef;
+      case "project":
+        return projectRef
       case "stack":
         return stackRef;
       case "contact":
@@ -51,6 +54,8 @@ function Navbar({
         return "SOBRE MIM";
       case "service":
         return "SERVIÇOS";
+      case "project":
+        return "PROJETOS"
       case "stack":
         return "STACK";
       case "contact":
@@ -71,7 +76,7 @@ function Navbar({
 
         {/* Navbar */}
         <div className="flex m-auto max-[1000px]:hidden z-50">
-      {["home", "about", "service", "stack", "contact"].map((page) => (
+      {["home", "about", "service","project", "stack", "contact"].map((page) => (
             <nav key={page} className="flex lato-light">
               <button
                 onClick={() => {
@@ -157,6 +162,17 @@ function Navbar({
                 }}
               >
                 SERVIÇOS <FontAwesomeIcon icon={faBook} />
+              </button>
+            </div>
+            <div className="border-b border-zinc-800  h-14 flex items-center">
+              <button
+                className="w-full text-end px-4"
+                onClick={() => {
+                  scrollToSection(serviceRef);
+                  toggleMenu();
+                }}
+              >
+                PROJETOS <FontAwesomeIcon icon={faBook} />
               </button>
             </div>
 
