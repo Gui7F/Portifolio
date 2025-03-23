@@ -11,9 +11,9 @@ const Servicos = () => {
     <main className="m-auto w-full">
       <h1 className="text-5xl text-slate-200 text-center">Serviços</h1>
       <article className="lg:flex md:flex">
-        <div className="lg:w-1/3 m-2 text-center border bg-black border-blue-500 p-6 rounded-lg shadow-2xl shadow-blue-500 max-[480px]:mb-10">
-          <FontAwesomeIcon icon= {faLaptopCode} className=" align-middle text-6xl text-blue-500 mb-2"/>
-          <h2 className="text-blue-500 text-2xl mb-4">Frontend</h2>
+        <div className="lg:w-1/3 m-2 text-center border bg-black border-slate-300 p-6 rounded-lg shadow-2xl shadow-slate-300 max-[480px]:mb-10">
+          <FontAwesomeIcon icon= {faLaptopCode} className=" align-middle text-6xl text-slate-300 mb-2"/>
+          <h2 className="text-slate-300 text-2xl mb-4">Frontend</h2>
           <p className="font-sans text-slate-200 w-full text-justify line-clamp-6 hover:line-clamp-none">
             Sou um desenvolvedor frontend especializado em criar interfaces
             modernas e eficientes, utilizando tecnologias como React para
@@ -26,9 +26,9 @@ const Servicos = () => {
             projetos escaláveis e de alta performance.
           </p>
         </div>
-        <div className="lg:w-1/3 m-2 text-center border bg-black border-blue-500 p-6 rounded-lg shadow-2xl shadow-blue-500 max-[480px]:mb-10">
-        <FontAwesomeIcon icon= {faNetworkWired} className=" align-middle text-6xl text-blue-500 mb-2"/>
-          <h2 className="text-blue-500 text-2xl mb-4">Backend</h2>
+        <div className="lg:w-1/3 m-2 text-center border bg-black border-slate-300 p-6 rounded-lg shadow-2xl shadow-slate-300 max-[480px]:mb-10">
+        <FontAwesomeIcon icon= {faNetworkWired} className=" align-middle text-6xl text-slate-300 mb-2"/>
+          <h2 className="text-slate-300 text-2xl mb-4">Backend</h2>
           <p className="font-sans text-slate-200 w-full text-justify line-clamp-6 hover:line-clamp-none">
             Sou desenvolvedor backend com experiência em Node.js e Express,
             utilizando TypeScript para criar APIs REST e RESTFull robustas e bem
@@ -41,9 +41,9 @@ const Servicos = () => {
             praticas e arquiteturas de APIs.
           </p>
         </div>
-        <div className="lg:w-1/3 m-2 text-center border bg-black border-blue-500 p-6 rounded-lg shadow-2xl shadow-blue-500 max-[480px]:mb-10">
-        <FontAwesomeIcon icon= {faWandMagic} className=" align-middle text-6xl text-blue-500 mb-2"/>
-          <h2 className="text-blue-500 text-2xl mb-4">Desing</h2>
+        <div className="lg:w-1/3 m-2 text-center border bg-black border-slate-300 p-6 rounded-lg shadow-2xl shadow-slate-300 max-[480px]:mb-10">
+        <FontAwesomeIcon icon= {faWandMagic} className=" align-middle text-6xl text-slate-300 mb-2"/>
+          <h2 className="text-slate-300 text-2xl mb-4">Desing</h2>
           <p className="font-sans text-slate-200 w-full text-justify line-clamp-6 hover:line-clamp-none">
             Sou apaixonado por design e experiência do usuário, utilizando Figma
             para idealização de interfaces e Photoshop para tratamento e
@@ -55,9 +55,9 @@ const Servicos = () => {
         </div>
       </article>
       <article className="lg:flex md:flex">
-        <div className="lg:w-1/3 m-2 text-center border bg-black border-blue-500 p-6 rounded-lg shadow-2xl shadow-blue-500 max-[480px]:mb-10">
-        <FontAwesomeIcon icon= {faDatabase} className=" align-middle text-6xl text-blue-500 mb-2"/>
-          <h2 className="text-blue-500 text-2xl mb-4">Database</h2>
+        <div className="lg:w-1/3 m-2 text-center border bg-black border-slate-300 p-6 rounded-lg shadow-2xl shadow-slate-300 max-[480px]:mb-10">
+        <FontAwesomeIcon icon= {faDatabase} className=" align-middle text-6xl text-slate-300 mb-2"/>
+          <h2 className="text-slate-300 text-2xl mb-4">Database</h2>
           <p className="font-sans text-slate-200 w-full text-justify line-clamp-6 hover:line-clamp-none">
             Tenho experiência em integração com bancos de dados NoSQL,
             especialmente MongoDB, dominando estruturas de collections e
@@ -68,9 +68,9 @@ const Servicos = () => {
             dados eficientes e adequadas às necessidades do projeto.
           </p>
         </div>
-        <div className="lg:w-1/3 m-2 text-center border bg-black border-blue-500 p-6 rounded-lg shadow-2xl shadow-blue-500 max-[480px]:mb-10">
-        <FontAwesomeIcon icon= {faGitAlt} className=" align-middle text-6xl text-blue-500 mb-2"/>
-          <h2 className="text-blue-500 text-2xl mb-4">Git</h2>
+        <div className="lg:w-1/3 m-2 text-center border bg-black border-slate-300 p-6 rounded-lg shadow-2xl shadow-slate-300 max-[480px]:mb-10">
+        <FontAwesomeIcon icon= {faGitAlt} className=" align-middle text-6xl text-slate-300 mb-2"/>
+          <h2 className="text-slate-300 text-2xl mb-4">Git</h2>
           <p className="font-sans text-slate-200 w-full text-justify line-clamp-6 hover:line-clamp-none">
             Utilizo Git desde o início dos meus estudos para versionamento e
             controle de código, garantindo organização e rastreabilidade em cada
@@ -81,9 +81,9 @@ const Servicos = () => {
             práticas de desenvolvimento.
           </p>
         </div>
-        <div className="lg:w-1/3 m-2 text-center border bg-black border-blue-500 p-6 rounded-lg shadow-2xl shadow-blue-500 max-[480px]:mb-10">
-        <FontAwesomeIcon icon= {faComment} className=" align-middle text-6xl text-blue-500 mb-2"/>
-          <h2 className="text-blue-500 text-2xl mb-4">Comunicação</h2>
+        <div className="lg:w-1/3 m-2 text-center border bg-black border-slate-300 p-6 rounded-lg shadow-2xl shadow-slate-300 max-[480px]:mb-10">
+        <FontAwesomeIcon icon= {faComment} className=" align-middle text-6xl text-slate-300 mb-2"/>
+          <h2 className="text-slate-300 text-2xl mb-4">Comunicação</h2>
           <p className="font-sans text-slate-200 w-full text-justify line-clamp-6 hover:line-clamp-none">
             Tenho uma soft skill muito desenvolvida em comunicação, com uma boa
             noção do valor da comunicação clara, objetiva e profissional.
