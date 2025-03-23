@@ -2,6 +2,7 @@ import React from "react";
 
 const Aboutme = () => {
   return (
+    
     <div className="flex m-auto">
       <div className="2xl:w-[500px] 2xl:h-[500px] bg-slate-400">
         <img src="" alt="" />

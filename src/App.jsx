@@ -39,7 +39,7 @@ function App() {
         
         <div className='m-auto' ref={homeRef}><Home/></div>
         <div className='m-auto h-svh bg-slate-800' ref={aboutMeRef}><Aboutme/></div>
-        <div className='m-auto h-svh bg-slate-600' ref={serviceRef}><Service/></div>
+        <div className='m-auto  bg-slate-600' ref={serviceRef}><Service/></div>
         <div className='m-auto h-svh bg-slate-400' ref={projectRef}></div>
         <div className='m-auto h-svh bg-slate-800' ref={stackRef}><Stack/></div>
         <div className='m-auto h-svh bg-slate-900' ref={contactRef}><Contact/></div>
