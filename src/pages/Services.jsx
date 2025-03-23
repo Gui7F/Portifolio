@@ -8,12 +8,13 @@ import { faComment } from "@fortawesome/free-solid-svg-icons";
 
 const Servicos = () => {
   return (
-    <main className="m-auto w-full mt-6">
+    <main className="m-auto w-full">
+      <h1 className="text-5xl text-slate-200 text-center">Serviços</h1>
       <article className="lg:flex md:flex">
-        <div className="lg:w-1/3 m-2 text-center border border-blue-500 p-6 rounded-lg shadow-2xl shadow-blue-500 max-[480px]:mb-10">
+        <div className="lg:w-1/3 m-2 text-center border bg-black border-blue-500 p-6 rounded-lg shadow-2xl shadow-blue-500 max-[480px]:mb-10">
           <FontAwesomeIcon icon= {faLaptopCode} className=" align-middle text-6xl text-blue-500 mb-2"/>
           <h2 className="text-blue-500 text-2xl mb-4">Frontend</h2>
-          <p className="font-sans text-slate-200 w-full text-left">
+          <p className="font-sans text-slate-200 w-full  text-justify">
             Sou um desenvolvedor frontend especializado em criar interfaces
             modernas e eficientes, utilizando tecnologias como React para
             construção de componentes reutilizáveis e dinâmicos, Tailwind CSS
@@ -25,7 +26,7 @@ const Servicos = () => {
             projetos escaláveis e de alta performance.
           </p>
         </div>
-        <div className="lg:w-1/3 m-2 text-center border border-blue-500 p-6 rounded-lg shadow-2xl shadow-blue-500 max-[480px]:mb-10">
+        <div className="lg:w-1/3 m-2 text-center border bg-black border-blue-500 p-6 rounded-lg shadow-2xl shadow-blue-500 max-[480px]:mb-10">
         <FontAwesomeIcon icon= {faNetworkWired} className=" align-middle text-6xl text-blue-500 mb-2"/>
           <h2 className="text-blue-500 text-2xl mb-4">Backend</h2>
           <p className="font-sans text-slate-200 w-full text-left">
@@ -40,7 +41,7 @@ const Servicos = () => {
             praticas e arquiteturas de APIs.
           </p>
         </div>
-        <div className="lg:w-1/3 m-2 text-center border border-blue-500 p-6 rounded-lg shadow-2xl shadow-blue-500 max-[480px]:mb-10">
+        <div className="lg:w-1/3 m-2 text-center border bg-black border-blue-500 p-6 rounded-lg shadow-2xl shadow-blue-500 max-[480px]:mb-10">
         <FontAwesomeIcon icon= {faWandMagic} className=" align-middle text-6xl text-blue-500 mb-2"/>
           <h2 className="text-blue-500 text-2xl mb-4">Desing</h2>
           <p className="font-sans text-slate-200 w-full text-left">
@@ -54,7 +55,7 @@ const Servicos = () => {
         </div>
       </article>
       <article className="lg:flex md:flex">
-        <div className="lg:w-1/3 m-2 text-center border border-blue-500 p-6 rounded-lg shadow-2xl shadow-blue-500 max-[480px]:mb-10">
+        <div className="lg:w-1/3 m-2 text-center border bg-black border-blue-500 p-6 rounded-lg shadow-2xl shadow-blue-500 max-[480px]:mb-10">
         <FontAwesomeIcon icon= {faDatabase} className=" align-middle text-6xl text-blue-500 mb-2"/>
           <h2 className="text-blue-500 text-2xl mb-4">Database</h2>
           <p className="font-sans text-slate-200 w-full text-left">
@@ -67,7 +68,7 @@ const Servicos = () => {
             dados eficientes e adequadas às necessidades do projeto.
           </p>
         </div>
-        <div className="lg:w-1/3 m-2 text-center border border-blue-500 p-6 rounded-lg shadow-2xl shadow-blue-500 max-[480px]:mb-10">
+        <div className="lg:w-1/3 m-2 text-center border bg-black border-blue-500 p-6 rounded-lg shadow-2xl shadow-blue-500 max-[480px]:mb-10">
         <FontAwesomeIcon icon= {faGitAlt} className=" align-middle text-6xl text-blue-500 mb-2"/>
           <h2 className="text-blue-500 text-2xl mb-4">Git</h2>
           <p className="font-sans text-slate-200 w-full text-left">
@@ -80,7 +81,7 @@ const Servicos = () => {
             práticas de desenvolvimento.
           </p>
         </div>
-        <div className="lg:w-1/3 m-2 text-center border border-blue-500 p-6 rounded-lg shadow-2xl shadow-blue-500 max-[480px]:mb-10">
+        <div className="lg:w-1/3 m-2 text-center border bg-black border-blue-500 p-6 rounded-lg shadow-2xl shadow-blue-500 max-[480px]:mb-10">
         <FontAwesomeIcon icon= {faComment} className=" align-middle text-6xl text-blue-500 mb-2"/>
           <h2 className="text-blue-500 text-2xl mb-4">Comunicação</h2>
           <p className="font-sans text-slate-200 w-full text-left">

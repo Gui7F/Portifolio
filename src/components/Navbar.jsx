@@ -9,6 +9,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faAddressCard } from "@fortawesome/free-solid-svg-icons";
 import { faBook } from "@fortawesome/free-solid-svg-icons";
+import { faListCheck } from "@fortawesome/free-solid-svg-icons/faListCheck";
 
 //hook
 import { useState } from "react";
@@ -119,7 +120,7 @@ function Navbar({
           transition: "transform 0.2s ease-in-out",
           transform: isMenuOpen ? "scale(1)" : "scale(0)",
         }}
-        className="fixed border inset-0 bg-color-clear bg-opacity-95 flex flex-col items-end justify-center z-50 w-3/4 ml-auto lato-thin"
+        className="fixed  inset-0 bg-zinc-900 text-zinc-300 bg-opacity-95 flex flex-col items-end justify-center z-50 w-3/4 ml-auto lato-thin"
       >
         <div className="absolute  top-[25px] w-full text-[18px]">
           <button
@@ -168,11 +169,11 @@ function Navbar({
               <button
                 className="w-full text-end px-4"
                 onClick={() => {
-                  scrollToSection(serviceRef);
+                  scrollToSection(projectRef);
                   toggleMenu();
                 }}
               >
-                PROJETOS <FontAwesomeIcon icon={faBook} />
+                PROJETOS <FontAwesomeIcon icon={faListCheck} />
               </button>
             </div>
 
