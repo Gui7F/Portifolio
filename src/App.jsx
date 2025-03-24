@@ -12,6 +12,7 @@ import Aboutme from "./pages/Aboutme";
 import Service from "./pages/Services";
 import Stack from "./pages/Stack";
 import Contact from "./pages/Contact";
+import Projects from "./pages/Projects";
 
 function App() {
   const scrollToSection = (ref) => {
@@ -40,8 +41,8 @@ function App() {
   {/* Background quadrados */}
   <div className="absolute inset-0 -z-10 ">  
     <Squaresbg
-      speed={1.5}
-      squareSize={40}
+      speed={0.3}
+      squareSize={200}
       direction="up" // up, down, left, right, diagonal
       borderColor="#fff"
       hoverFillColor="#222"
@@ -52,17 +53,19 @@ function App() {
   <div className="m-auto" ref={homeRef}>
     <Home />
   </div>
-  <div className="m-auto h-svh" ref={aboutMeRef}>
+  <div className="m-auto 2xl:h-svh md:h-auto flex align-middle" ref={aboutMeRef}>
     <Aboutme />
   </div>
-  <div className="m-auto" ref={serviceRef}>
+  <div className="m-auto 2xl:h-svh flex align-middle" ref={serviceRef}>
     <Service />
   </div>
-  <div className="m-auto h-svh" ref={projectRef}></div>
-  <div className="m-auto h-svh" ref={stackRef}>
+  <div className="m-auto 2xl:h-svh flex align-middle" ref={projectRef}>
+    <Projects/>
+  </div>
+  <div className="m-auto 2xl:h-svh" ref={stackRef}>
     <Stack />
   </div>
-  <div className="m-auto h-svh" ref={contactRef}>
+  <div className="m-auto 2xl:h-svh" ref={contactRef}>
     <Contact />
   </div>
 </div>

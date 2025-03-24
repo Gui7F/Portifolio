@@ -4,12 +4,15 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
+// Components 
+import ShinyText from "../components/ShinyText";
+
 const Aboutme = () => {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
 
   return (
-    <div className="2xl:flex space-x-20 m-auto relative bg-black  w-3/4 mt-64 pt-[80px] pb-[80px]">
+    <div className="2xl:flex space-x-20 m-auto relative bg-black  w-3/4 pt-[80px] pb-[80px]">
       {/* Imagem */}
       <div className="w-[40%] h-[500px] bg-slate-400">
         <img src="" alt="" />
@@ -17,7 +20,7 @@ const Aboutme = () => {
 
       {/* Texto com Carrossel */}
       <div className="2xl:w-1/2 text-slate-300 relative">
-        <h1 className="2xl:text-5xl">Sobre Mim</h1>
+        <h1 className='text-5xl text-center'><ShinyText text={"Sobre Mim"} className=''/></h1>
 
         {/* Botões personalizados */}
         <button

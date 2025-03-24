@@ -50,7 +50,7 @@ const Home = () => {
             manualMode={false}
             blurAmount={5}
             borderColor="white"
-            animationDuration={1}
+            animationDuration={0.5}
             pauseBetweenAnimations={1}
           />
         </div>

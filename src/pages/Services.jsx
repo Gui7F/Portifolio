@@ -5,11 +5,14 @@ import { faWandMagic } from "@fortawesome/free-solid-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 import { faGitAlt } from "@fortawesome/free-brands-svg-icons";
 import { faComment } from "@fortawesome/free-solid-svg-icons";
+import ShinyText from "../components/ShinyText";
+  
+
 
 const Servicos = () => {
   return (
-    <main className="m-auto w-full">
-      <h1 className="text-5xl text-slate-200 text-center">Serviços</h1>
+    <main className="m-auto w-3/4 pt-[80px] h-full">
+      <h1 className="text-center"><ShinyText text="Service" disabled={false} speed={3} className='custom-class text-5xl' /></h1>
       <article className="lg:flex md:flex">
         <div className="lg:w-1/3 m-2 text-center border bg-black border-slate-300 p-6 rounded-lg shadow-2xl shadow-slate-300 max-[480px]:mb-10">
           <FontAwesomeIcon icon= {faLaptopCode} className=" align-middle text-6xl text-slate-300 mb-2"/>
