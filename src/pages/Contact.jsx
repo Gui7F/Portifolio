@@ -20,7 +20,7 @@ const Contact = () => {
     {/* Formulário */}
     <div className="w-1/3">
       <label>Nome</label>
-      <input type="text" required className="block w-full mb-4"/>
+      <input type="text" required className="block w-full mb-4 "/>
       <label>Email</label>
       <input type="text" required className="block w-full mb-4"/>
       <label>Mensagem</label>

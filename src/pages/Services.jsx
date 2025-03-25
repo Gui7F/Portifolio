@@ -14,7 +14,7 @@ const Servicos = () => {
     <main className="m-auto w-3/4 pt-[80px] h-full">
       <h1 className="text-center"><ShinyText text="Service" disabled={false} speed={3} className='custom-class text-5xl' /></h1>
       <article className="lg:flex md:flex">
-        <div className="lg:w-1/3 m-2 text-center border bg-black border-slate-300 p-6 rounded-lg shadow-2xl shadow-slate-300 max-[480px]:mb-10">
+        <div className="lg:w-1/3 m-2 text-center border bg-black border-neutral-600 p-6 rounded-lg shadow-2xl shadow-slate-300 max-[480px]:mb-10">
           <FontAwesomeIcon icon= {faLaptopCode} className=" align-middle text-6xl text-slate-300 mb-2"/>
           <h2 className="text-slate-300 text-2xl mb-4">Frontend</h2>
           <p className="font-sans text-slate-200 w-full text-justify line-clamp-6 hover:line-clamp-none">
@@ -29,7 +29,7 @@ const Servicos = () => {
             projetos escaláveis e de alta performance.
           </p>
         </div>
-        <div className="lg:w-1/3 m-2 text-center border bg-black border-slate-300 p-6 rounded-lg shadow-2xl shadow-slate-300 max-[480px]:mb-10">
+        <div className="lg:w-1/3 m-2 text-center border bg-black border-neutral-600 p-6 rounded-lg shadow-2xl shadow-slate-300 max-[480px]:mb-10">
         <FontAwesomeIcon icon= {faNetworkWired} className=" align-middle text-6xl text-slate-300 mb-2"/>
           <h2 className="text-slate-300 text-2xl mb-4">Backend</h2>
           <p className="font-sans text-slate-200 w-full text-justify line-clamp-6 hover:line-clamp-none">
@@ -44,7 +44,7 @@ const Servicos = () => {
             praticas e arquiteturas de APIs.
           </p>
         </div>
-        <div className="lg:w-1/3 m-2 text-center border bg-black border-slate-300 p-6 rounded-lg shadow-2xl shadow-slate-300 max-[480px]:mb-10">
+        <div className="lg:w-1/3 m-2 text-center border bg-black border-neutral-600 p-6 rounded-lg shadow-2xl shadow-slate-300 max-[480px]:mb-10">
         <FontAwesomeIcon icon= {faWandMagic} className=" align-middle text-6xl text-slate-300 mb-2"/>
           <h2 className="text-slate-300 text-2xl mb-4">Desing</h2>
           <p className="font-sans text-slate-200 w-full text-justify line-clamp-6 hover:line-clamp-none">
@@ -58,7 +58,7 @@ const Servicos = () => {
         </div>
       </article>
       <article className="lg:flex md:flex">
-        <div className="lg:w-1/3 m-2 text-center border bg-black border-slate-300 p-6 rounded-lg shadow-2xl shadow-slate-300 max-[480px]:mb-10">
+        <div className="lg:w-1/3 m-2 text-center border bg-black border-neutral-600 p-6 rounded-lg shadow-2xl shadow-slate-300 max-[480px]:mb-10">
         <FontAwesomeIcon icon= {faDatabase} className=" align-middle text-6xl text-slate-300 mb-2"/>
           <h2 className="text-slate-300 text-2xl mb-4">Database</h2>
           <p className="font-sans text-slate-200 w-full text-justify line-clamp-6 hover:line-clamp-none">
@@ -71,7 +71,7 @@ const Servicos = () => {
             dados eficientes e adequadas às necessidades do projeto.
           </p>
         </div>
-        <div className="lg:w-1/3 m-2 text-center border bg-black border-slate-300 p-6 rounded-lg shadow-2xl shadow-slate-300 max-[480px]:mb-10">
+        <div className="lg:w-1/3 m-2 text-center border bg-black border-neutral-600 p-6 rounded-lg shadow-2xl shadow-slate-300 max-[480px]:mb-10">
         <FontAwesomeIcon icon= {faGitAlt} className=" align-middle text-6xl text-slate-300 mb-2"/>
           <h2 className="text-slate-300 text-2xl mb-4">Git</h2>
           <p className="font-sans text-slate-200 w-full text-justify line-clamp-6 hover:line-clamp-none">
@@ -84,7 +84,7 @@ const Servicos = () => {
             práticas de desenvolvimento.
           </p>
         </div>
-        <div className="lg:w-1/3 m-2 text-center border bg-black border-slate-300 p-6 rounded-lg shadow-2xl shadow-slate-300 max-[480px]:mb-10">
+        <div className="lg:w-1/3 m-2 text-center border bg-black border-neutral-600 p-6 rounded-lg shadow-2xl shadow-slate-300 max-[480px]:mb-10">
         <FontAwesomeIcon icon= {faComment} className=" align-middle text-6xl text-slate-300 mb-2"/>
           <h2 className="text-slate-300 text-2xl mb-4">Comunicação</h2>
           <p className="font-sans text-slate-200 w-full text-justify line-clamp-6 hover:line-clamp-none">
