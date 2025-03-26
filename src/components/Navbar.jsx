@@ -210,12 +210,5 @@ function Navbar({
     </>
   );
 }
-Navbar.propTypes = {
-  scrollToSection: PropTypes.func.isRequired,
-  homeRef: PropTypes.object.isRequired,
-  aboutMeRef: PropTypes.object.isRequired,
-  articlesRef: PropTypes.object.isRequired,
-  contactRef: PropTypes.object.isRequired,
-};
 
 export default Navbar;

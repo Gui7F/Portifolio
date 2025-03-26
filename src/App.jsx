@@ -62,7 +62,7 @@ function App() {
   <div className="m-auto 2xl:h-svh flex align-middle" ref={projectRef}>
     <Projects/>
   </div>
-  <div className="m-auto 2xl:h-svh" ref={stackRef}>
+  <div className="m-auto 2xl:h-svh flex align-middle" ref={stackRef}>
     <Stack />
   </div>
   <div className="m-auto 2xl:h-svh flex align-middle" ref={contactRef}>
