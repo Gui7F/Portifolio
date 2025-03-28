@@ -20,7 +20,7 @@ const Aboutme = () => {
 
       {/* Texto com Carrossel */}
       <div className="2xl:w-1/2 text-slate-300 relative">
-        <h1 className='2xl:text-5xl max-[480px]:mt-9 text-3xl text-center'><ShinyText text={"Sobre Mim"}/></h1>
+        <h1 className='2xl:text-5xl md:mt-5 max-[480px]:mt-9 text-3xl text-center'><ShinyText text={"Sobre Mim"}/></h1>
 
         {/* Botões personalizados */}
         <button
@@ -32,7 +32,7 @@ const Aboutme = () => {
 
         <button
           ref={nextRef}
-          className="absolute 2xl:right-[-50px] right-[-20px] top-1/2 transform -translate-y-1/2 bg-black text-white p-3 rounded-full hover:bg-white hover:text-black transition"
+          className="absolute 2xl:right-[-20px] max-[480px]:right-[-20px] md:right-[-20px] top-1/2 transform -translate-y-1/2 bg-black text-white p-3 rounded-full hover:bg-white hover:text-black transition"
         >
           →
         </button>
@@ -50,12 +50,12 @@ const Aboutme = () => {
           }}
           spaceBetween={30}
           slidesPerView={1}
-          className="mt-6 text-justify w-[90%]"
+          className="mt-6 text-justify max-[480px]:w-[90%] md:w-[70%]"
         >
           <SwiperSlide>
             <div>
               <h2 className="text-xl text-center font-bold mb-2">Texto1</h2>
-              <p>
+              <p >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, eos amet? Delectus fuga voluptate perspiciatis suscipit, odio modi possimus sapiente, obcaecati, ratione consequuntur quasi nisi dignissimos quibusdam nihil necessitatibus repellendus.
               </p>
             </div>

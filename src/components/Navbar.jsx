@@ -78,13 +78,13 @@ function Navbar({
         {/* Navbar */}
         <div className="flex m-auto max-[1000px]:hidden z-50">
       {["home", "about", "service","project", "stack", "contact"].map((page) => (
-            <nav key={page} className="flex lato-light">
+            <nav key={page} className="flex lato-light "> 
               <button
                 onClick={() => {
                   scrollToSection(getSectionRef(page));
                   setIsActivated(page);
                 }}
-                className={`relative px-6 py-1 ml-10  text-[16px]  transition-all duration-300 overflow-hidden 
+                className={`relative px-6 py-1 ml-10  2xl:text-[16px] md:text-[12px] transition-all duration-300 overflow-hidden 
           ${isActivated === page ? "text-zinc-300" : "text-zinc-500"}
           `}
               >

@@ -30,7 +30,7 @@ const Home = () => {
 
   return (
     <div
-      className="relative w-full 2xl:h-[800px] h-[600px] mb-[150px] flex items-center justify-center bg-cover bg-center bg-no-repeat"
+      className="relative w-full 2xl:h-[800px] h-[600px] 2xl:mb-0 md:mb-[150px] mb-[150px] flex items-center justify-center bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: "url('./code_home.gif')" }}
     >
       <div className="absolute inset-0 bg-black bg-opacity-85 pointer-events-none"></div>
@@ -41,7 +41,7 @@ const Home = () => {
             delay={150}
             animateBy="words"
             direction="top"
-            className="2xl:text-9xl mb-8 text-center max-[480px]:text-center text-4xl text-nowrap font-black"
+            className="2xl:text-9xl mb-8 text-center max-[480px]:text-center md:text-7xl text-4xl text-nowrap font-black"
           />
         </div>
         <div ref={h2Ref}>

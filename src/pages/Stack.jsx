@@ -139,27 +139,27 @@ const Stack = () => {
 
   return (
     <div
-      className="2xl:w-[75%] max-[480px]:w-[90%] m-auto bg-zinc-900 py-28   shadow-slate-300 "
+      className="2xl:w-3/4 max-[480px]:w-[90%] md:w-[90%] m-auto bg-zinc-900 py-28 shadow-slate-300 2xl:m-auto mb-[150px]"
       style={{
         boxShadow: "inset 0px -20px 1000px 4px rgba(203, 213, 225, 0.8)",
       }}
       ref={containerRef}
     >
       
-      <div className="2xl:grid grid-cols-4 grid-rows-3 max-[480px]:grid max-[480px]:grid-cols-2 2xl:gap-y-16 place-items-center">
+      <div className="2xl:grid grid-cols-4 2xl:gap-y-16 grid-rows-3 md:grid md:gap-y-10 max-[480px]:grid max-[480px]:grid-cols-2  place-items-center">
         <DeviconJavascript
           icon="devicon:javascript"
           width="128"
           height="128"
           onClick={onClickAnimated}
-          className = "box scale-[0.7]"
+          className = "box max-[480px]:scale-[0.5] md:scale-[0.6] 2xl:scale-[1]"
         />
 
         <DeviconReactnative
           icon="devicon:reactnative"
           width="128"
           height="128"
-          className="box2 scale-[0.7]"
+          className="box2 max-[480px]:scale-[0.5] md:scale-[0.6] 2xl:scale-[1]"
           onClick={onClickAnimated2}
         />
 
@@ -167,70 +167,70 @@ const Stack = () => {
           icon="devicon:mongodb"
           width="128"
           height="128"
-          className="box3 scale-[0.7]"
+          className="box3 max-[480px]:scale-[0.5] md:scale-[0.6] 2xl:scale-[1]"
           onClick={onClickAnimated3}
         />
         <DeviconNodejs
           icon="devicon:nodejs"
           width="128"
           height="128"
-          className="box4 scale-[0.7]"
+          className="box4 max-[480px]:scale-[0.5] md:scale-[0.6] 2xl:scale-[1]"
           onClick={onClickAnimated4}
         />
         <DeviconNpm
           icon="devicon:npm"
           width="128"
           height="128"
-          className="box5 scale-[0.7]"
+          className="box5 max-[480px]:scale-[0.5] md:scale-[0.6] 2xl:scale-[1]"
           onClick={onClickAnimated5}
         />
         <DeviconTypescript
           icon="devicon:npm"
           width="128"
           height="128"
-          className="box6 scale-[0.7]"
+          className="box6 max-[480px]:scale-[0.5] md:scale-[0.6] 2xl:scale-[1]"
           onClick={onClickAnimated6}
         />
         <DeviconVitejs
           icon="devicon:vite"
           width="128"
           height="128"
-          className="box7 scale-[0.7]"
+          className="box7 max-[480px]:scale-[0.5] md:scale-[0.6] 2xl:scale-[1]"
           onClick={onClickAnimated7}
         />
         <DeviconExpress
           icon="devicon:express"
           width="128"
           height="128"
-          className="box8 scale-[0.7]"
+          className="box8 max-[480px]:scale-[0.5] md:scale-[0.6] 2xl:scale-[1]"
           onClick={onClickAnimated8}
         />
         <DeviconTailwindcss
           icon="devicon:tailwind"
           width="128"
           height="128"
-          className="box9 scale-[0.7]"
+          className="box9 max-[480px]:scale-[0.5] md:scale-[0.6] 2xl:scale-[1]"
           onClick={onClickAnimated9}
         />
         <DeviconPrisma
           icon="devicon:prisma"
           width="128"
           height="128"
-          className="box10 scale-[0.7]"
+          className="box10 max-[480px]:scale-[0.5] md:scale-[0.6] 2xl:scale-[1]"
           onClick={onClickAnimated10}
         />
         <DeviconVscode
           icon="devicon:vscode"
           width="128"
           height="128"
-          className="box11 scale-[0.7]"
+          className="box11 max-[480px]:scale-[0.5] md:scale-[0.6] 2xl:scale-[1]"
           onClick={onClickAnimated11}
         />
         <DeviconGit
           icon="devicon:prisma"
           width="128"
           height="128"
-          className="box12 scale-[0.7]"
+          className="box12 max-[480px]:scale-[0.5] md:scale-[0.6] 2xl:scale-[1]"
           onClick={onClickAnimated12}
         />
       </div>
