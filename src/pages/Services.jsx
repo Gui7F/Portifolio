@@ -13,7 +13,7 @@ const Servicos = () => {
   
  
   return (
-    <main className="m-auto 2xl:w-3/4 w-[90%] py-[300px] h-full">
+    <main className="m-auto 2xl:w-3/4 w-[90%] h-full">
       <h1 className="text-center"><ShinyText text="Service" disabled={false} speed={3} className='custom-class text-5xl' /></h1>
       <article className="lg:flex md:flex">
         <div className="lg:w-1/3 m-2 text-center border bg-black border-neutral-600 p-6 rounded-lg shadow-2xl shadow-slate-300 max-[480px]:mb-10">

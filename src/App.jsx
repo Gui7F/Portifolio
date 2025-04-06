@@ -53,19 +53,19 @@ function App() {
   <div className="m-auto" ref={homeRef}>
     <Home />
   </div>
-  <div className="m-auto 2xl:h-svh md:h-auto flex align-middle" ref={aboutMeRef}>
+  <div className="m-auto 2xl:h-auto md:h-auto flex align-middle 2xl:py-[150px] py-[50px]" ref={aboutMeRef}>
     <Aboutme />
   </div>
-  <div className="m-auto 2xl:h-svh flex align-middle" ref={serviceRef}>
+  <div className="m-auto 2xl:h-auto flex align-middle 2xl:py-[150px] py-[50px]" ref={serviceRef}>
     <Service />
   </div>
-  <div className="m-auto 2xl:h-svh flex align-middle" ref={projectRef}>
+  <div className="m-auto 2xl:h-auto flex align-middle 2xl:py-[150px] py-[50px]" ref={projectRef}>
     <Projects/>
   </div>
-  <div className="m-auto 2xl:h-svh flex align-middle" ref={stackRef}>
+  <div className="m-auto 2xl:h-auto flex align-middle 2xl:py-[150px] py-[50px]" ref={stackRef}>
     <Stack />
   </div>
-  <div className="m-auto 2xl:h-svh flex align-middle" ref={contactRef}>
+  <div className="m-auto 2xl:h-auto flex align-middle 2xl:py-[150px] py-[50px]" ref={contactRef}>
     <Contact />
   </div>
 </div>
