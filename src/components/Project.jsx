@@ -3,9 +3,10 @@ import ProjectCard from '../components/ProjectCard';
 
 const ProjectInfo = [
   {
-    title: 'Projeto 1',
-    description: 'Descrição do projeto 1',
-    img: 'https://via.placeholder.com/150',
+    title: 'DevFinance$',
+    shortDescription: 'Um aplicativo de finanças pessoais',
+    description: 'DevFinance$ é um aplicativo de finanças pessoais que permite aos usuários gerenciar suas despesas e receitas de forma simples e eficiente. Com uma interface intuitiva, os usuários podem adicionar, editar e excluir transações financeiras, categorizando-as para melhor controle. Além disso, o aplicativo oferece gráficos e relatórios para ajudar os usuários a visualizar seus gastos e economias ao longo do tempo.',
+    img: '../public/dev_finance.png',
   },
   {
     title: 'Projeto 2',
@@ -45,6 +46,7 @@ const Projects = () => {
             title={project.title}
             description={project.description}
             img={project.img}
+            shortDescription={project.shortDescription}
           />
         ))}
       </div>
