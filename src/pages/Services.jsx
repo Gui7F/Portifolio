@@ -15,13 +15,13 @@ const Servicos = () => {
   return (
     <main className="m-auto 2xl:w-3/4 w-[90%] h-full">
       <div className="2xl:w-[99%] w-[96%] m-auto bg-black border border-neutral-600 mb-3 flex items-center justify-center">
-      <h1 className="text-center py-6"><ShinyText text="Serviços" className='custom-class 2xl:text-5xl text-4x1' /></h1>
+      <h1 className="text-center py-6 custom-class 2xl:text-5xl text-2xl"><ShinyText text="Serviços"/></h1>
       </div>
       
       <article className="lg:flex md:flex">
         <div className="lg:w-1/3 m-2 text-center border bg-black border-neutral-600 p-6  shadow-2xl shadow-slate-300 max-[480px]:mb-3">
-          <FontAwesomeIcon icon= {faLaptopCode} className=" align-middle text-6xl text-slate-300 mb-2" />
-          <h2 className="text-slate-300 text-2xl mb-4">Frontend</h2>
+          <FontAwesomeIcon icon= {faLaptopCode} className=" align-middle 2xl:text-6xl text-[50px] text-slate-300 mb-2" />
+          <h2 className="text-slate-300 2xl:text-2xl text-[20px] mb-4">Frontend</h2>
           <p className=" font-sans text-slate-200 w-full text-justify line-clamp-6 hover:line-clamp-none" >
             Sou um desenvolvedor frontend especializado em criar interfaces
             modernas e eficientes, utilizando tecnologias como React para
@@ -35,8 +35,8 @@ const Servicos = () => {
           </p>
         </div>
         <div className="lg:w-1/3 m-2 text-center border bg-black border-neutral-600 p-6  shadow-2xl shadow-slate-300 max-[480px]:mb-3">
-        <FontAwesomeIcon icon= {faNetworkWired} className=" align-middle text-6xl text-slate-300 mb-2" r/>
-          <h2 className="text-slate-300 text-2xl mb-4">Backend</h2>
+        <FontAwesomeIcon icon= {faNetworkWired} className=" align-middle 2xl:text-6xl text-[50px] text-slate-300 mb-2" r/>
+          <h2 className="text-slate-300 2xl:text-2xl text-[20px] mb-4">Backend</h2>
           <p className="font-sans text-slate-200 w-full text-justify line-clamp-6 hover:line-clamp-none " >
             Sou desenvolvedor backend com experiência em Node.js e Express,
             utilizando TypeScript para criar APIs REST e RESTFull robustas e bem
@@ -50,8 +50,8 @@ const Servicos = () => {
           </p>
         </div>
         <div className="lg:w-1/3 m-2 text-center border bg-black border-neutral-600 p-6  shadow-2xl shadow-slate-300 max-[480px]:mb-3">
-        <FontAwesomeIcon icon= {faWandMagic} className=" align-middle text-6xl text-slate-300 mb-2"/>
-          <h2 className="text-slate-300 text-2xl mb-4">Desing</h2>
+        <FontAwesomeIcon icon= {faWandMagic} className=" align-middle 2xl:text-6xl text-[50px] text-slate-300 mb-2"/>
+          <h2 className="text-slate-300 2xl:text-2xl text-[20px] mb-4">Desing</h2>
           <p className="font-sans text-slate-200 w-full text-justify line-clamp-6 hover:line-clamp-none ">
             Sou apaixonado por design e experiência do usuário, utilizando Figma
             para idealização de interfaces e Photoshop para tratamento e
@@ -64,8 +64,8 @@ const Servicos = () => {
       </article>
       <article className="lg:flex md:flex">
         <div className="lg:w-1/3 m-2 text-center border bg-black border-neutral-600 p-6  shadow-2xl shadow-slate-300 max-[480px]:mb-3">
-        <FontAwesomeIcon icon= {faDatabase} className=" align-middle text-6xl text-slate-300 mb-2"/>
-          <h2 className="text-slate-300 text-2xl mb-4">Database</h2>
+        <FontAwesomeIcon icon= {faDatabase} className=" align-middle 2xl:text-6xl text-[50px] text-slate-300 mb-2"/>
+          <h2 className="text-slate-300 2xl:text-2xl text-[20px] mb-4">Database</h2>
           <p className="font-sans text-slate-200 w-full text-justify line-clamp-6 hover:line-clamp-none ">
             Tenho experiência em integração com bancos de dados NoSQL,
             especialmente MongoDB, dominando estruturas de collections e
@@ -77,8 +77,8 @@ const Servicos = () => {
           </p>
         </div>
         <div className="lg:w-1/3 m-2 text-center border bg-black border-neutral-600 p-6  shadow-2xl shadow-slate-300 max-[480px]:mb-3">
-        <FontAwesomeIcon icon= {faGitAlt} className=" align-middle text-6xl text-slate-300 mb-2"/>
-          <h2 className="text-slate-300 text-2xl mb-4">Git</h2>
+        <FontAwesomeIcon icon= {faGitAlt} className=" align-middle 2xl:text-6xl text-[50px] text-slate-300 mb-2"/>
+          <h2 className="text-slate-300 2xl:text-2xl text-[20px] mb-4">Git</h2>
           <p className="font-sans text-slate-200 w-full text-justify line-clamp-6 hover:line-clamp-none ">
             Utilizo Git desde o início dos meus estudos para versionamento e
             controle de código, garantindo organização e rastreabilidade em cada
@@ -90,8 +90,8 @@ const Servicos = () => {
           </p>
         </div>
         <div className="lg:w-1/3 m-2 text-center border bg-black border-neutral-600 p-6  shadow-2xl shadow-slate-300 max-[480px]:mb-3">
-        <FontAwesomeIcon icon= {faComment} className=" align-middle text-6xl text-slate-300 mb-2"/>
-          <h2 className="text-slate-300 text-2xl mb-4">Comunicação</h2>
+        <FontAwesomeIcon icon= {faComment} className=" align-middle 2xl:text-6xl text-[50px] text-slate-300 mb-2"/>
+          <h2 className="text-slate-300 2xl:text-2xl text-[20px] mb-4">Comunicação</h2>
           <p className="font-sans text-slate-200 w-full text-justify line-clamp-6 hover:line-clamp-none ">
             Tenho uma soft skill muito desenvolvida em comunicação, com uma boa
             noção do valor da comunicação clara, objetiva e profissional.

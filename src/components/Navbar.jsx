@@ -10,9 +10,11 @@ import {
 import { faAddressCard } from "@fortawesome/free-solid-svg-icons";
 import { faBook } from "@fortawesome/free-solid-svg-icons";
 import { faListCheck } from "@fortawesome/free-solid-svg-icons/faListCheck";
-
+import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons/faLinkedinIn";
+import { faGithub } from "@fortawesome/free-brands-svg-icons/faGithub";
 //hook
 import { useState } from "react";
+
 
 function Navbar({
   scrollToSection,
@@ -71,8 +73,8 @@ function Navbar({
     <>
 <div className="fixed z-50 w-full flex justify-around items-center border-zinc-900 bg-zinc-900 h-[67px] shadow-[0px_-20px_50px_4px_rgba(29,78,216,0.8)] animate-neon">
         {/* Logo */}
-        <div className="max-[480px]:absolute left-0 pl-2">
-          <h1>Logo</h1>
+        <div className="max-[480px]:absolute left-0 pl-2 2xl:w-[100px] 2xl:h-[67px] w-[60px]  flex items-center justify-center">
+          <img className="w-full h-full object-cover" src="/logo.png" alt="" />
         </div>
 
         {/* Navbar */}
@@ -194,7 +196,7 @@ function Navbar({
                 className="w-full text-end px-4"
                 onClick={() => {
                   window.open(
-                    "https://wa.me/5516988187713?text=Olá,%20Leana%20Beraldo%20quero%20agendar%20uma%20consulta",
+                    "https://wa.me/5516988287084?text=Ol%C3%A1%20Gui%2C%20tudo%20bem%3F",
                     "_blank",
                     "noopener,noreferrer"
                   );
@@ -202,6 +204,36 @@ function Navbar({
                 }}
               >
                 WHATSAPP <FontAwesomeIcon icon={faSquareWhatsapp} />
+              </button>
+            </div>
+            <div className="border-b border-zinc-800  h-14 flex items-center">
+              <button
+                className="w-full text-end px-4"
+                onClick={() => {
+                 window.open(
+                  "https://www.linkedin.com/in/gui-web-developer/",
+                  "_blank",
+                  "noopener,noreferrer"
+                 )
+                 toggleMenu(); 
+                }}
+              >
+                LINKEDIN <FontAwesomeIcon icon={faLinkedinIn} />
+              </button>
+            </div>
+            <div className="border-b border-zinc-800  h-14 flex items-center">
+              <button
+                className="w-full text-end px-4"
+                onClick={() => {
+                 window.open(
+                  "https://github.com/Gui7F",
+                  "_blank",
+                  "noopener,noreferrer"
+                 )
+                 toggleMenu(); 
+                }}
+              >
+                GITHUB <FontAwesomeIcon icon={faGithub} />
               </button>
             </div>
           </nav>

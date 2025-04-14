@@ -19,10 +19,16 @@ const Contact = () => {
       <h1 className="2xl:text-5xl text-2xl mb-20">Entre em contato comigo</h1>
       <p className="2xl:text-[22px] mb-40 md:w-[80%] lg:text-[18px]"><span>"</span> Vamos trabalhar juntos, cooperar em projetos com confiança e honestidade, com codigo limpo e bem estruturado, com entrega de valores e resolução de problemas para atingir nosso objetivos e realizar sonhos. <span>"</span></p>
       <h2 className='2xl:text-2xl lg:text-[18px]'>Rede Social</h2>
-      <div className="flex space-x-4 mt-4 m-auto text-center text-3xl">  
-        <button><FontAwesomeIcon icon={faGithub}/></button>
-        <button><FontAwesomeIcon icon={faLinkedinIn}/></button>
-        <button><FontAwesomeIcon icon={faWhatsapp}/></button>
+      <div className="flex space-x-4 mt-4 m-auto text-center text-3xl">
+        <a href="https://github.com/Gui7F" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faGithub} />
+        </a>
+        <a href="https://www.linkedin.com/in/gui-web-developer/" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faLinkedinIn} />
+        </a>
+        <a href="https://wa.me/5516988287084?text=Ol%C3%A1%20Gui%2C%20tudo%20bem%3F" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faWhatsapp} />
+        </a>
       </div>
     </div>
     
