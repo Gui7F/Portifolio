@@ -7,6 +7,7 @@ const ProjectInfo = [
     shortDescription: 'Um aplicativo de finanças pessoais',
     description: 'DevFinance$ é um aplicativo de finanças pessoais que permite aos usuários gerenciar suas despesas e receitas de forma simples e eficiente. Com uma interface intuitiva, os usuários podem adicionar, editar e excluir transações financeiras, categorizando-as para melhor controle. Além disso, o aplicativo oferece gráficos e relatórios para ajudar os usuários a visualizar seus gastos e economias ao longo do tempo.',
     img: '/dev_finance.png',
+    tag : ['React', 'JavaScript', 'CSS', 'HTML']
   },
   {
     title: 'Site Leana Beraldo',
@@ -70,6 +71,7 @@ const Projects = () => {
             description={project.description}
             img={project.img}
             shortDescription={project.shortDescription}
+            tag={project.tag}
           />
         ))}
       </div>

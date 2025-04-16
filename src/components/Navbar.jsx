@@ -71,10 +71,10 @@ function Navbar({
 
   return (
     <>
-<div className="fixed z-50 w-full flex justify-around items-center border-zinc-900 bg-zinc-900 h-[67px] shadow-[0px_-20px_50px_4px_rgba(29,78,216,0.8)] animate-neon">
+<div className="fixed z-50 w-full flex justify-center items-center border-zinc-900 bg-zinc-900 h-[67px] shadow-[0px_-20px_50px_4px_rgba(29,78,216,0.8)] animate-neon">
         {/* Logo */}
-        <div className="max-[480px]:absolute left-0 pl-2 2xl:w-[100px] 2xl:h-[67px] w-[60px]  flex items-center justify-center">
-          <img className="w-full h-full object-cover" src="/logo.png" alt="" />
+        <div className="max-[480px]:absolute left-0 pl-2 2xl:w-[70px] 2xl:h-[67px] w-[60px]  flex items-center justify-center">
+          <img className="w-full h-full object-contain" src="/logo.png" alt="" />
         </div>
 
         {/* Navbar */}
@@ -86,7 +86,7 @@ function Navbar({
                   scrollToSection(getSectionRef(page));
                   setIsActivated(page);
                 }}
-                className={`relative px-6 py-1 ml-10  2xl:text-[16px] md:text-[12px] transition-all duration-300 overflow-hidden 
+                className={`relative px-6 py-1 ml-10  2xl:text-[14px] md:text-[12px] transition-all duration-300 overflow-hidden 
           ${isActivated === page ? "text-zinc-300" : "text-zinc-500"}
           `}
               >
