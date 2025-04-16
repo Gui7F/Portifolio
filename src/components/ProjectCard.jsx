@@ -32,7 +32,7 @@ const ProjectCard = ({ title, description, img , shortDescription, tag}) => {
             </button>
             </div>
 
-            <div className="w-full h-[60%] overflow-hidden flex items-center justify-center">
+            <div className="w-full h-[80%] overflow-hidden flex items-center justify-center">
               <img
                 src={img}
                 alt={title}
@@ -45,9 +45,9 @@ const ProjectCard = ({ title, description, img , shortDescription, tag}) => {
             <p className="2xl:text-justify text-center text-neutral-300">{description}</p>
 
             {/* Buttons and tags */}
-            <div className="2xl:flex justify-arround w-full">
+            <div className="2xl:flex justify-arround items-center w-full">
                 {/* Button Deploy */}
-             <div className="flex items-center justify-center mt-4 mr-2">
+             <div className="flex items-center justify-center">
                 <div className="flex items-center justify-center mt-4 mr-2 ">
                   <button className="group text-white flex border border-neutral-600 rounded-md px-4 py-2">
                   <svg
@@ -65,11 +65,11 @@ const ProjectCard = ({ title, description, img , shortDescription, tag}) => {
                   </button>
                 </div>
             </div>
-                <div className="flex items-center justify-center mt-4">
+                <div className="flex items-center justify-center  mt-3">
                   {tag.map((item, index) => (
                     <p
                       key={index}
-                      className="border border-neutral-600 2xl:text-base text-[10px] text-white rounded-md px-2 py-2 ml-2 leading-3 hover:bg-neutral-300 hover:text-black hover:cursor-pointer"
+                      className="border border-neutral-600 2xl:text-base text-[10px] text-white rounded-md px-2 py-[-2px] ml-2  hover:bg-neutral-300 hover:text-black hover:cursor-pointer"
                     >
                       {item}
                     </p>
