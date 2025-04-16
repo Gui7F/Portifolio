@@ -1,5 +1,8 @@
-import React, { useRef } from 'react'
+import React, { useRef , useState} from 'react'
 import emailjs from 'emailjs-com'
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+
 // components
 import SpotlightCard from '../components/SpotlightCard'
 // icons
@@ -8,25 +11,30 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons/faLinkedinIn'
 
+
 const Contact = () => {
   const form = useRef()
-
+  const [loading, setLoading] = useState(false)
   const sendEmail = (e) => {
     e.preventDefault()
-
+    setLoading(true)
     emailjs.sendForm('service_0yj6tgm', 'template_mc26wi9', form.current, 'pnCCWaS-uwATSWwW9')
       .then((result) => {
         console.log(result.text)
-        alert("Mensagem enviada com sucesso!")
+        toast.success("Mensagem enviada com sucesso!")
       }, (error) => {
         console.log(error.text)
-        alert("Erro ao enviar mensagem.")
+        toast.error("Erro ao enviar mensagem.")
       })
-
-    e.target.reset()
+      
+      .finally(() => {
+        setLoading(false)
+        e.target.reset()
+      })
   }
 
   return (
+    <>
     <SpotlightCard className="custom-spotlight-card 2xl:w-[60%] w-[90%] m-auto h-auto 2xl:m-auto mb-[100px]" spotlightColor="rgba(147, 167, 180, 0.5)">
       <div className="text-slate-300 flex justify-between w-full h-full">
 
@@ -58,11 +66,26 @@ const Contact = () => {
             <input type="email" name="email" required className="block w-full mb-4 bg-neutral-800 focus:outline-none rounded-md p-1" />
             <label className='text-sm'>MENSAGEM</label>
             <textarea name="message" required className="block w-full h-[250px] mb-4 bg-neutral-800 focus:outline-none rounded-md p-1"></textarea>
-            <button type="submit" className='bg-neutral-800 px-4 py-1 rounded-md'>Enviar</button>
+              <button type="submit" className='bg-neutral-800 px-4 py-1 rounded-md' disabled={loading}>
+                {loading ? 'Enviando...' : 'Enviar'}
+              </button>
           </form>
         </div>
       </div>
     </SpotlightCard>
+    <ToastContainer
+    position="bottom-right"
+    autoClose={4000}
+    hideProgressBar={false}
+    newestOnTop={false}
+    closeOnClick
+    rtl={false}
+    pauseOnFocusLoss
+    draggable
+    pauseOnHover
+    theme="dark"
+  />
+  </>  
   )
 }
 
