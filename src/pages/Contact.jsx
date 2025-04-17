@@ -41,7 +41,7 @@ const Contact = () => {
         {/* Texto */}
         <div className="2xl:w-2/3 pr-8 lg:w-[80%] max-[900px]:hidden max-[480px]:hidden">
           <h1 className="2xl:text-5xl text-2xl mb-20">Entre em contato comigo</h1>
-          <p className="2xl:text-[22px] mb-40 md:w-[80%] lg:text-[18px]"><span>"</span> Vamos trabalhar juntos, cooperar em projetos com confiança e honestidade, com código limpo e bem estruturado, com entrega de valores e resolução de problemas para atingir nossos objetivos e realizar sonhos. <span>"</span></p>
+          <p className="2xl:text-[22px] mb-40 md:w-[80%] lg:text-[18px]"><span>"</span> Vamos trabalhar juntos, cooperar em projetos com confiança e honestidade, com código limpo e bem estruturado, sinta-se à vontade para entrar em contato comigo através do formulário. <span>"</span></p>
           <h2 className='2xl:text-2xl lg:text-[18px]'>Rede Social</h2>
           <div className="flex space-x-4 mt-4 m-auto text-center text-3xl">
             <a href="https://github.com/Gui7F" target="_blank" rel="noopener noreferrer">
@@ -61,9 +61,9 @@ const Contact = () => {
           <h1 className='2xl:text-3xl lg:text-[18px] mb-7'>EMAIL</h1>
           <form ref={form} onSubmit={sendEmail}>
             <label className='text-sm'>NOME</label>
-            <input type="text" name="name" required className="block w-full mb-4 bg-neutral-800 focus:outline-none rounded-md p-1" />
+            <input type="text" name="from_name" required className="block w-full mb-4 bg-neutral-800 focus:outline-none rounded-md p-1" />
             <label className='text-sm'>EMAIL</label>
-            <input type="email" name="email" required className="block w-full mb-4 bg-neutral-800 focus:outline-none rounded-md p-1" />
+            <input type="email" name="from_email" required className="block w-full mb-4 bg-neutral-800 focus:outline-none rounded-md p-1" />
             <label className='text-sm'>MENSAGEM</label>
             <textarea name="message" required className="block w-full h-[250px] mb-4 bg-neutral-800 focus:outline-none rounded-md p-1"></textarea>
               <button type="submit" className='bg-neutral-800 px-4 py-1 rounded-md' disabled={loading}>

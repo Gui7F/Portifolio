@@ -14,8 +14,8 @@ const Aboutme = () => {
   return (
     <div className="2xl:flex 2xl:space-x-20  m-auto relative bg-black 2xl:w-3/4 w-[90%] border border-neutral-600 pt-[80px] pb-[80px]">
       {/* Imagem */}
-      <div className="2xl:w-[40%] w-[80%] m-auto h-[500px]  bg-slate-400">
-        <img className="h-full w-full object-cover" src="./fotoperfil.jpg" alt="" />
+      <div className="2xl:w-[40%] w-[80%] m-auto 2xl:h-[500px] h-auto">
+        <img className="h-full w-full object-contain" src="./fotoperfil.png" alt="" />
       </div>
 
       {/* Texto com Carrossel */}
