@@ -10,7 +10,6 @@ const Projects = () => {
              <ShinyText text={"Projetos"} />
           </h1>
         </div>
-
         <div>
           <Project />
         </div>

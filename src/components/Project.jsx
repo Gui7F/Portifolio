@@ -85,10 +85,12 @@ const ProjectInfo = [
   },
 ];
 
-const Projects = () => {
+import { useRef } from 'react';
 
+const Projects = () => {
+  const containerProject = useRef(null);
   return (
-    <div className="m-auto w-full h-full">
+    <div className="m-auto w-full h-full" ref={containerProject}>
       <div className="2xl:grid 2xl:grid-cols-3 lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 gap-4 grid col-span-1"> 
         {ProjectInfo.map((project, index) => (
           <ProjectCard
@@ -100,6 +102,7 @@ const Projects = () => {
             tag={project.tag}
             linkDeploy={project.linkDeploy}
             linkGitHub={project.linkGitHub}
+            containerRef = {containerProject}
           />
         ))}
       </div>

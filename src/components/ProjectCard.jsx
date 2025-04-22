@@ -4,14 +4,56 @@ import { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
-const ProjectCard = ({ title, description, img , shortDescription, tag, linkDeploy, linkGitHub}) => {
+//animations
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger)
+
+const ProjectCard = ({ title, description, img , shortDescription, tag, linkDeploy, linkGitHub, containerRef}) => {
   const [modalIsOpen, setModalIsOpen] = React.useState(false);
   const refModalOverlay = React.useRef(null);
   const refCardsProject = React.useRef(null);
   const handleClick = () => {
     setModalIsOpen(true);
   };
-  
+
+ 
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      // photo animation
+      const imagesOfProject = gsap.utils.toArray(".photoProject")
+      imagesOfProject.forEach((photo) => {
+        gsap.from(photo, {
+          y: 100,
+          opacity: 0,
+          duration: 1,
+          ease: "power4.inOut",
+          scrollTrigger: {
+            trigger: photo,
+            start: "top 70%",
+            toggleActions: "play reverse play reverse",
+          },
+        });
+        
+      //text animation
+      const textOfProject = gsap.utils.toArray(".textProject")
+      textOfProject.forEach((text) => {
+        gsap.from(text,{
+          y: 100,
+          opacity: 0,
+          duration: 1,
+          ease: "power4.inOut",
+          scrollTrigger: {
+            trigger: text,
+            start: "top 90%",
+            toggleActions: "play reverse play reverse",
+            }
+          })
+        })
+      })
+    }, containerRef)
+
+  }, [containerRef])
   
   return (
     <>
@@ -86,16 +128,17 @@ const ProjectCard = ({ title, description, img , shortDescription, tag, linkDepl
         onClick={handleClick}
         ref={refCardsProject}
       >
-        <div className="w-full h-full overflow-hidden">
+        <div className="photoProject w-full h-full overflow-hidden">
           <img
             src={img}
             alt={title}
             className="w-full h-auto rounded-md object-cover"
           />
         </div>
-
-        <h2 className="text-xl font-bold mt-2">{title}</h2>
-        <p className="">{shortDescription}</p>
+        <div className="textProject flex flex-col items-center">
+          <h2 className="text-xl font-bold mt-2">{title}</h2>
+          <p className="">{shortDescription}</p>
+        </div>
       </div>
     </>
   );
