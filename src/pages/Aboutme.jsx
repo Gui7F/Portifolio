@@ -12,7 +12,7 @@ const Aboutme = () => {
   const nextRef = useRef(null);
 
   return (
-    <div className="2xl:flex 2xl:space-x-20  m-auto relative bg-black 2xl:w-3/4 w-[90%] border border-neutral-600 pt-[80px] pb-[80px]">
+    <div className="2xl:flex 2xl:space-x-20  m-auto h-auto relative bg-black 2xl:w-3/4 w-[90%] border border-neutral-600 pt-[80px] pb-[80px]">
       {/* Imagem */}
       <div className="2xl:w-[40%] w-[80%] m-auto 2xl:h-[500px] h-auto">
         <img className="h-full w-full object-contain" src="./fotoperfil.png" alt="" />
@@ -52,7 +52,7 @@ const Aboutme = () => {
           }}
           spaceBetween={30}
           slidesPerView={1}
-          className="mt-6 text-justify max-[480px]:w-[90%] md:w-[70%]"
+          className="mt-6 text-justify max-[480px]:w-[90%] md:w-[70%] h-auto"
         >
           <SwiperSlide>
             <div>
