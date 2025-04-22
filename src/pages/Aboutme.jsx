@@ -1,30 +1,75 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "swiper/css";
 import "swiper/css/navigation";
 
-// Components
 import ShinyText from "../components/ShinyText";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Aboutme = () => {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
+  const aboutSection = useRef(null);
+  const imageRef = useRef(null);
+  const textRef = useRef(null);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.from(imageRef.current, {
+        x: -100,
+        opacity: 0,
+        duration: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: aboutSection.current,
+          start: "top 40%",
+          toggleActions: "play reverse play reverse",
+        },
+      });
+
+      gsap.from(textRef.current, {
+        x: 100,
+        opacity: 0,
+        duration: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: aboutSection.current,
+          start: "top 40%",
+          toggleActions: "play reverse play reverse",
+        },
+      });
+    }, aboutSection);
+
+    return () => ctx.revert();
+  }, []);
 
   return (
-    <div className="2xl:flex 2xl:space-x-20  m-auto h-auto relative bg-black 2xl:w-3/4 w-[90%] border border-neutral-600 pt-[80px] pb-[80px]">
+    <div
+      ref={aboutSection}
+      className="2xl:flex 2xl:space-x-20 m-auto h-auto relative bg-black 2xl:w-3/4 w-[90%] border border-neutral-600 pt-[80px] pb-[80px]"
+    >
       {/* Imagem */}
-      <div className="2xl:w-[40%] w-[80%] m-auto 2xl:h-[500px] h-auto">
-        <img className="h-full w-full object-contain" src="./fotoperfil.png" alt="" />
+      <div
+        ref={imageRef}
+        className="2xl:w-[40%] w-[80%] m-auto 2xl:h-[500px] h-auto"
+      >
+        <img
+          className="h-full w-full object-contain"
+          src="./fotoperfil.png"
+          alt=""
+        />
       </div>
 
       {/* Texto com Carrossel */}
-      <div className="2xl:w-1/2 text-slate-300 relative">
+      <div ref={textRef} className="2xl:w-1/2 text-slate-300 relative">
         <h1 className="2xl:text-5xl md:mt-5 max-[480px]:mt-9 text-3xl text-center">
           <ShinyText text={"Sobre Mim"} />
         </h1>
 
-        {/* Botões personalizados */}
         <button
           ref={prevRef}
           className="absolute 2xl:left-[-50px] left-[-15px] top-1/2 transform -translate-y-1/2 bg-black text-white p-3 rounded-full hover:bg-white hover:text-black transition"
@@ -39,7 +84,6 @@ const Aboutme = () => {
           →
         </button>
 
-        {/* Swiper com setas personalizadas */}
         <Swiper
           modules={[Navigation]}
           navigation={{
@@ -60,11 +104,11 @@ const Aboutme = () => {
                 Apresentação
               </h2>
               <p className="mb-2">
-                Meu nome é Guilherme Ribeiro, sou estudante de Analise e
+                Meu nome é Guilherme Ribeiro, sou estudante de Análise e
                 Desenvolvimento de Sistemas. Tenho 25 anos e sou apaixonado por
-                tecnologia, programação e design. Estou sempre em busca de novos
-                desafios e oportunidades para aprender e crescer na área de
-                desenvolvimento web.
+                tecnologia, programação e design. Estou sempre em busca de
+                novos desafios e oportunidades para aprender e crescer na área
+                de desenvolvimento web.
               </p>
               <p>
                 Sou pai de duas crianças e sou casado, o que me motiva a
@@ -100,6 +144,7 @@ const Aboutme = () => {
               </p>
             </div>
           </SwiperSlide>
+
           <SwiperSlide>
             <div>
               <h2 className="text-xl text-center font-bold mb-2">
@@ -114,9 +159,13 @@ const Aboutme = () => {
                 respeito como princípios fundamentais da minha vida.
               </p>
               <p>
-                Gosto de paz e tranquilidade desde mais novo, nunca fui de ir muito a festas ou baladas. Prefiro ficar em casa, jogando videogame ou assistindo
-                filmes e séries no meu tempo livre ou simplemente passear com a familia e amigos, aproveitando momentos de descontração e diversão. Tambem gosto 
-                de treinar e cuidar da minha saúde, e me manter em forma, tanto fisicamente quanto mentalmente.
+                Gosto de paz e tranquilidade desde mais novo, nunca fui de ir
+                muito a festas ou baladas. Prefiro ficar em casa, jogando
+                videogame ou assistindo filmes e séries no meu tempo livre ou
+                simplesmente passear com a família e amigos, aproveitando
+                momentos de descontração e diversão. Também gosto de treinar e
+                cuidar da minha saúde, e me manter em forma, tanto fisicamente
+                quanto mentalmente.
               </p>
             </div>
           </SwiperSlide>
@@ -127,3 +176,4 @@ const Aboutme = () => {
 };
 
 export default Aboutme;
+
