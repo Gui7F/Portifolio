@@ -1,8 +1,7 @@
-
 // gsap
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import { ScrollTrigger } from "gsap/all";
 // icons
 import {
@@ -26,6 +25,27 @@ const Stack = () => {
   gsap.registerPlugin(ScrollTrigger);
 
   const { contextSafe } = useGSAP({ scope: containerRef });
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+     const itensStack = gsap.utils.toArray(".itemStack")
+     itensStack.forEach((item) => {
+      gsap.from(item, {
+        y: 100,
+        rotate: 360 ,
+        opacity : 0,
+        duration : 2,
+        ease: "elastic.out",
+        scrollTrigger: {
+          trigger : containerRef.current,
+          start : "top 60%",
+          toggleActions : "play reverse play reverse"
+        }
+      })
+     })
+    })
+    return () => ctx.revert();
+  }, [containerRef])
 
   const onClickAnimated = contextSafe(() => {
     gsap.from(".box", {
@@ -152,14 +172,14 @@ const Stack = () => {
           width="128"
           height="128"
           onClick={onClickAnimated}
-          className = "box max-[480px]:scale-[0.5] md:scale-[0.6] 2xl:scale-[1]"
+          className = "itemStack box max-[480px]:scale-[0.5] md:scale-[0.6] 2xl:scale-[1]"
         />
 
         <DeviconReactnative
           icon="devicon:reactnative"
           width="128"
           height="128"
-          className="box2 max-[480px]:scale-[0.5] md:scale-[0.6] 2xl:scale-[1]"
+          className="itemStack box2 max-[480px]:scale-[0.5] md:scale-[0.6] 2xl:scale-[1]"
           onClick={onClickAnimated2}
         />
 
@@ -167,70 +187,70 @@ const Stack = () => {
           icon="devicon:mongodb"
           width="128"
           height="128"
-          className="box3 max-[480px]:scale-[0.5] md:scale-[0.6] 2xl:scale-[1]"
+          className="itemStack box3 max-[480px]:scale-[0.5] md:scale-[0.6] 2xl:scale-[1]"
           onClick={onClickAnimated3}
         />
         <DeviconNodejs
           icon="devicon:nodejs"
           width="128"
           height="128"
-          className="box4 max-[480px]:scale-[0.5] md:scale-[0.6] 2xl:scale-[1]"
+          className="itemStack box4 max-[480px]:scale-[0.5] md:scale-[0.6] 2xl:scale-[1]"
           onClick={onClickAnimated4}
         />
         <DeviconNpm
           icon="devicon:npm"
           width="128"
           height="128"
-          className="box5 max-[480px]:scale-[0.5] md:scale-[0.6] 2xl:scale-[1]"
+          className="itemStack box5 max-[480px]:scale-[0.5] md:scale-[0.6] 2xl:scale-[1]"
           onClick={onClickAnimated5}
         />
         <DeviconTypescript
           icon="devicon:npm"
           width="128"
           height="128"
-          className="box6 max-[480px]:scale-[0.5] md:scale-[0.6] 2xl:scale-[1]"
+          className="itemStack box6 max-[480px]:scale-[0.5] md:scale-[0.6] 2xl:scale-[1]"
           onClick={onClickAnimated6}
         />
         <DeviconVitejs
           icon="devicon:vite"
           width="128"
           height="128"
-          className="box7 max-[480px]:scale-[0.5] md:scale-[0.6] 2xl:scale-[1]"
+          className="itemStack box7 max-[480px]:scale-[0.5] md:scale-[0.6] 2xl:scale-[1]"
           onClick={onClickAnimated7}
         />
         <DeviconExpress
           icon="devicon:express"
           width="128"
           height="128"
-          className="box8 max-[480px]:scale-[0.5] md:scale-[0.6] 2xl:scale-[1]"
+          className="itemStack box8 max-[480px]:scale-[0.5] md:scale-[0.6] 2xl:scale-[1]"
           onClick={onClickAnimated8}
         />
         <DeviconTailwindcss
           icon="devicon:tailwind"
           width="128"
           height="128"
-          className="box9 max-[480px]:scale-[0.5] md:scale-[0.6] 2xl:scale-[1]"
+          className="itemStack box9 max-[480px]:scale-[0.5] md:scale-[0.6] 2xl:scale-[1]"
           onClick={onClickAnimated9}
         />
         <DeviconPrisma
           icon="devicon:prisma"
           width="128"
           height="128"
-          className="box10 max-[480px]:scale-[0.5] md:scale-[0.6] 2xl:scale-[1]"
+          className="itemStack box10 max-[480px]:scale-[0.5] md:scale-[0.6] 2xl:scale-[1]"
           onClick={onClickAnimated10}
         />
         <DeviconVscode
           icon="devicon:vscode"
           width="128"
           height="128"
-          className="box11 max-[480px]:scale-[0.5] md:scale-[0.6] 2xl:scale-[1]"
+          className="itemStack box11 max-[480px]:scale-[0.5] md:scale-[0.6] 2xl:scale-[1]"
           onClick={onClickAnimated11}
         />
         <DeviconGit
           icon="devicon:prisma"
           width="128"
           height="128"
-          className="box12 max-[480px]:scale-[0.5] md:scale-[0.6] 2xl:scale-[1]"
+          className="itemStack box12 max-[480px]:scale-[0.5] md:scale-[0.6] 2xl:scale-[1]"
           onClick={onClickAnimated12}
         />
       </div>
