@@ -50,12 +50,13 @@ const Aboutme = () => {
   return (
     <div
       ref={aboutSection}
-      className="2xl:flex 2xl:space-x-20 m-auto h-auto relative bg-black 2xl:w-3/4 w-[90%] border border-neutral-600 pt-[80px] pb-[80px]"
+      className="lg:flex lg:space-x-20 m-auto h-auto relative bg-black 2xl:w-3/4 w-[90%] border border-neutral-600 pt-[80px] pb-[80px]"
+
     >
       {/* Imagem */}
       <div
         ref={imageRef}
-        className="2xl:w-[40%] w-[80%] m-auto 2xl:h-[500px] h-auto"
+        className="2xl:w-[40%] lg:w-[40%] w-[80%] m-auto 2xl:h-[500px] h-auto"
       >
         <img
           className="h-full w-full object-contain"
@@ -65,7 +66,7 @@ const Aboutme = () => {
       </div>
 
       {/* Texto com Carrossel */}
-      <div ref={textRef} className="2xl:w-1/2 text-slate-300 relative">
+      <div ref={textRef} className="2xl:w-1/2 lg:w-1/2 text-slate-300 relative">
         <h1 className="2xl:text-5xl md:mt-5 max-[480px]:mt-9 text-3xl text-center">
           <ShinyText text={"Sobre Mim"} />
         </h1>
@@ -96,7 +97,7 @@ const Aboutme = () => {
           }}
           spaceBetween={30}
           slidesPerView={1}
-          className="mt-6 text-justify max-[480px]:w-[90%] md:w-[70%] h-auto"
+          className="mt-6 text-justify w-[90%] h-auto"
         >
           <SwiperSlide>
             <div>

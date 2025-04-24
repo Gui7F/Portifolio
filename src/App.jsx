@@ -27,7 +27,8 @@ function App() {
   const contactRef = useRef(null);
 
   return (
-    <>
+    <div className="m-auto">
+      <div className="w-full">
       <Navbar
         scrollToSection={scrollToSection}
         homeRef={homeRef}
@@ -37,39 +38,56 @@ function App() {
         stackRef={stackRef}
         contactRef={contactRef}
       />
- <div className="relative m-auto 2xl:w-[1800px]">
-  {/* Background quadrados */}
-  <div className="absolute inset-0 -z-10 ">  
-    <Squaresbg
-      speed={0.3}
-      squareSize={200}
-      direction="up" // up, down, left, right, diagonal
-      borderColor="#fff"
-      hoverFillColor="#222"
-    />
-  </div>
+      </div>
 
-  {/* Conteúdo */}
-  <div className="m-auto" ref={homeRef}>
-    <Home />
-  </div>
-  <div className="m-auto 2xl:h-auto md:h-auto flex align-middle 2xl:py-[150px] py-[50px]" ref={aboutMeRef}>
-    <Aboutme />
-  </div>
-  <div className="m-auto 2xl:h-auto flex align-middle 2xl:py-[150px] py-[50px]" ref={serviceRef}>
-    <Service />
-  </div>
-  <div className="m-auto 2xl:h-auto flex align-middle 2xl:py-[150px] py-[50px]" ref={projectRef}>
-    <Projects/>
-  </div>
-  <div className="m-auto 2xl:h-auto flex align-middle 2xl:py-[150px] py-[50px]" ref={stackRef}>
-    <Stack />
-  </div>
-  <div className="m-auto 2xl:h-auto flex align-middle 2xl:py-[150px] py-[50px]" ref={contactRef}>
-    <Contact />
-  </div>
-</div>
-    </>
+      <div className="relative m-auto w-full">
+        {/* Background quadrados */}
+        <div className="absolute inset-0 -z-10 ">
+          <Squaresbg
+            speed={0.3}
+            squareSize={150}
+            direction="up" // up, down, left, right, diagonal
+            borderColor="#fff"
+            hoverFillColor="#222"
+          />
+        </div>
+
+        {/* Conteúdo */}
+        <div className="m-auto" ref={homeRef}>
+          <Home />
+        </div>
+        <div
+          className="m-auto 2xl:h-auto md:h-auto flex align-middle 2xl:py-[150px] py-[50px] 2xl:w-[1800px]"
+          ref={aboutMeRef}
+        >
+          <Aboutme />
+        </div>
+        <div
+          className="m-auto 2xl:h-auto flex align-middle 2xl:py-[150px] py-[50px] 2xl:w-[1800px] "
+          ref={serviceRef}
+        >
+          <Service />
+        </div>
+        <div
+          className="m-auto 2xl:h-auto flex align-middle 2xl:py-[150px] py-[50px] 2xl:w-[1800px] w-full"
+          ref={projectRef}
+        >
+          <Projects />
+        </div>
+        <div
+          className="m-auto 2xl:h-auto flex align-middle 2xl:py-[150px] py-[50px] 2xl:w-[1800px] w-full"
+          ref={stackRef}
+        >
+          <Stack />
+        </div>
+        <div
+          className="m-auto 2xl:h-auto flex align-middle 2xl:py-[150px] py-[50px] 2xl:w-[1800px] w-full"
+          ref={contactRef}
+        >
+          <Contact />
+        </div>
+      </div>
+    </div>
   );
 }
 

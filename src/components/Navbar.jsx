@@ -72,9 +72,9 @@ function Navbar({
 
   return (
     <>
-<div className="fixed z-50 w-full flex justify-center items-center border-zinc-900 bg-zinc-900 h-[67px] shadow-[0px_-20px_50px_4px_rgba(29,78,216,0.8)] animate-neon">
+      <div className="fixed z-50 m-auto w-dvw flex justify-center items-center border-zinc-900 bg-zinc-900 h-[67px] shadow-[0px_-20px_50px_4px_rgba(29,78,216,0.8)] animate-neon">
         {/* Logo */}
-        <div className="max-[480px]:absolute left-0 pl-2 2xl:w-[70px] 2xl:h-[67px] w-[60px]  flex items-center justify-center">
+        <div className="max-[1000px]:absolute left-0 pl-2 2xl:w-[70px] 2xl:h-[67px] w-[60px] flex items-center justify-center" onClick={() => {scrollToSection(homeRef)}}>
           <img className="w-full h-full object-contain" src="/logo.png" alt="" />
         </div>
 
@@ -102,7 +102,7 @@ function Navbar({
           ))}
         </div>
         {/* Icone Navbar Mobile */}
-        <div className="lg:hidden max-[480px]:absolute right-2.5 pr-2">
+        <div className="lg:hidden md: max-[1000px]:absolute right-2.5 pr-2">
           <button
             onClick={toggleMenu}
             className="text-gray-700 focus:outline-none text-[20px]"

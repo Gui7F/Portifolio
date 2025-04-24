@@ -61,11 +61,11 @@ const Servicos = () => {
 
   return (
     <main className="m-auto 2xl:w-3/4 w-[90%] h-full" ref={containerService}>
-      <div className="2xl:w-[99%] w-[96%] m-auto bg-black border border-neutral-600 mb-3 flex items-center justify-center">
+      <div className="2xl:w-[99%] lg:w-[98.5%] w-[96%] m-auto bg-black border border-neutral-600 mb-3 flex items-center justify-center">
       <h1 className="text-center py-6 custom-class 2xl:text-5xl text-2xl"><ShinyText text="Serviços"/></h1>
       </div>
       
-      <article className="lg:flex md:flex">
+      <article className="lg:flex">
         <div className="lg:w-1/3 m-2 text-center border bg-black border-neutral-600 p-6  shadow-2xl shadow-slate-300 max-[480px]:mb-3">
           <div className="titleService flex flex-col items-center">
           <FontAwesomeIcon icon= {faLaptopCode} className=" align-middle 2xl:text-6xl text-[50px] text-slate-300 mb-2"  />
@@ -115,7 +115,7 @@ const Servicos = () => {
           </p>
         </div>
       </article>
-      <article className="lg:flex md:flex">
+      <article className="lg:flex">
         <div className="lg:w-1/3 m-2 text-center border bg-black border-neutral-600 p-6  shadow-2xl shadow-slate-300 max-[480px]:mb-3">
           <div className="titleService flex flex-col items-center">
           <FontAwesomeIcon icon= {faDatabase} className=" align-middle 2xl:text-6xl text-[50px] text-slate-300 mb-2"/>
