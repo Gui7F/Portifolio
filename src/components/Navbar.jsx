@@ -12,6 +12,7 @@ import { faBook } from "@fortawesome/free-solid-svg-icons";
 import { faListCheck } from "@fortawesome/free-solid-svg-icons/faListCheck";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons/faLinkedinIn";
 import { faGithub } from "@fortawesome/free-brands-svg-icons/faGithub";
+import { faCode } from "@fortawesome/free-solid-svg-icons";
 //hook
 import { useState } from "react";
 
@@ -176,6 +177,18 @@ function Navbar({
                 }}
               >
                 PROJETOS <FontAwesomeIcon icon={faListCheck} />
+              </button>
+            </div>
+
+            <div className="border-b border-zinc-800  h-14 flex items-center">
+              <button
+                className="w-full text-end px-4"
+                onClick={() => {
+                  scrollToSection(stackRef);
+                  toggleMenu();
+                }}
+              >
+                STACK <FontAwesomeIcon icon={faCode} />
               </button>
             </div>
 
