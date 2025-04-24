@@ -1,4 +1,3 @@
-import { div } from "framer-motion/client";
 import React from "react";
 import { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -13,48 +12,46 @@ const ProjectCard = ({ title, description, img , shortDescription, tag, linkDepl
   const [modalIsOpen, setModalIsOpen] = React.useState(false);
   const refModalOverlay = React.useRef(null);
   const refCardsProject = React.useRef(null);
+  const refImageCard = React.useRef(null);
+  const refTitleCard = React.useRef(null);
+
   const handleClick = () => {
     setModalIsOpen(true);
   };
 
- 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      // photo animation
-      const imagesOfProject = gsap.utils.toArray(".photoProject")
-      imagesOfProject.forEach((photo) => {
-        gsap.from(photo, {
-          y: 100,
-          opacity: 0,
-          duration: 1,
-          ease: "power4.inOut",
-          scrollTrigger: {
-            trigger: photo,
-            start: "top 70%",
-            toggleActions: "play reverse play reverse",
-          },
-        });
-        
-      //text animation
-      const textOfProject = gsap.utils.toArray(".textProject")
-      textOfProject.forEach((text) => {
-        gsap.from(text,{
-          y: 100,
-          opacity: 0,
-          duration: 1,
-          ease: "power4.inOut",
-          scrollTrigger: {
-            trigger: text,
-            start: "top 90%",
-            toggleActions: "play reverse play reverse",
-            }
-          })
-        })
+      // Animation image card
+      gsap.from(refImageCard.current, {
+        x: -100,
+        opacity: 0,
+        duration: 2,
+        ease: "power4.inOut",
+        scrollTrigger: {
+          trigger: refImageCard.current,
+          start: "top 80%",
+          toggleActions: "play reverse play reverse",
+        },
       })
-    }, containerRef)
+       
+      // Animation title card 
+      gsap.from (refTitleCard.current,{
+        y: 100,
+        opacity: 0,
+        duration : 1 ,
+        ease : "elastic.inOut",
+        scrollTrigger : {
+          trigger : refTitleCard.current,
+          start : "top 100%",
+          toggleActions : "play reverse play reverse"
+        } 
+      })
+    })
 
-  }, [containerRef])
+    return () => ctx.revert();
+  }, [refImageCard])
   
+
   return (
     <>
 
@@ -133,9 +130,10 @@ const ProjectCard = ({ title, description, img , shortDescription, tag, linkDepl
             src={img}
             alt={title}
             className="w-full h-auto rounded-md object-cover"
+            ref={refImageCard}
           />
         </div>
-        <div className="textProject flex flex-col items-center">
+        <div className="textProject flex flex-col items-center" ref={refTitleCard}>
           <h2 className="text-xl font-bold mt-2">{title}</h2>
           <p className="">{shortDescription}</p>
         </div>
