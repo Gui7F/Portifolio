@@ -1,7 +1,7 @@
 // gsap
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import { useEffect, useRef } from "react";
+import { useLayoutEffect, useRef } from "react";
 import { ScrollTrigger } from "gsap/all";
 // icons
 import {
@@ -26,7 +26,7 @@ const Stack = () => {
 
   const { contextSafe } = useGSAP({ scope: containerRef });
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const ctx = gsap.context(() => {
      const itensStack = gsap.utils.toArray(".itemStack")
      itensStack.forEach((item) => {
@@ -36,16 +36,18 @@ const Stack = () => {
         opacity : 0,
         duration : 2,
         ease: "elastic.out",
+        force3D: true,
         scrollTrigger: {
           trigger : containerRef.current,
           start : "top 60%",
-          toggleActions : "play reverse play reverse"
+          toggleActions : "play reverse play reverse",
+          invalidateOnRefresh: true
         }
       })
      })
     })
     return () => ctx.revert();
-  }, [containerRef])
+  }, [])
 
   const onClickAnimated = contextSafe(() => {
     gsap.from(".box", {
@@ -53,6 +55,7 @@ const Stack = () => {
       rotate: 360,
       y: 30, 
       ease:"bounce",
+      force3D:true,
     });
   })
 
@@ -62,6 +65,7 @@ const Stack = () => {
       rotate: 360,
       y: 30, 
       ease:"bounce",
+      force3D:true
     });
   })
   
@@ -71,6 +75,7 @@ const Stack = () => {
       rotate: 360,
       y: 30, 
       ease:"bounce",
+      force3D:true
     });
   })
 
@@ -80,6 +85,7 @@ const Stack = () => {
       rotate: 360,
       y: 30, 
       ease:"bounce",
+      force3D:true
     });
   })
 
@@ -89,6 +95,7 @@ const Stack = () => {
       rotate: 360,
       y: 30, 
       ease:"bounce",
+      force3D:true
     });
   })
 
@@ -98,6 +105,7 @@ const Stack = () => {
       rotate: 360,
       y: 30, 
       ease:"bounce",
+      force3D:true
     });
   })
 
@@ -107,6 +115,7 @@ const Stack = () => {
       rotate: 360,
       y: 30, 
       ease:"bounce",
+      force3D:true
     });
   })
 
@@ -116,6 +125,7 @@ const Stack = () => {
       rotate: 360,
       y: 30, 
       ease:"bounce",
+      force3D:true
     });
   })
 
@@ -125,6 +135,7 @@ const Stack = () => {
       rotate: 360,
       y: 30, 
       ease:"bounce",
+      force3D:true
     });
   })
 
@@ -135,6 +146,7 @@ const Stack = () => {
       rotate: 360,
       y: 30, 
       ease:"bounce",
+      force3D:true
     });
   })
 
@@ -144,6 +156,7 @@ const Stack = () => {
       rotate: 360,
       y: 30, 
       ease:"bounce",
+      force3D:true
     });
   })
 
@@ -153,6 +166,7 @@ const Stack = () => {
       rotate: 360,
       y: 30, 
       ease:"bounce",
+      force3D:true
     });
   })
  

@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState, useLayoutEffect } from "react";
 import emailjs from "emailjs-com";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -48,7 +48,7 @@ const Contact = () => {
 
   const containerRef = useRef(null);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const ctx = gsap.context(() => {
       const textItens = gsap.utils.toArray(".textForm");
       textItens.forEach((item) => {
@@ -57,10 +57,12 @@ const Contact = () => {
           opacity: 0,
           duration: 1,
           ease : "power4",
+          force3D:true,
           scrollTrigger: {
             trigger: containerRef.current,
             start: "top 80%",
             toggleActions: "play reverse play reverse",
+            invalidateOnRefresh: true
           },
         });
       });
@@ -71,17 +73,19 @@ const Contact = () => {
           y: 100,
           opacity: 0,
           duration: 2,
-          ease:"back",
+          ease:"expo",
+          force3D:true,
           scrollTrigger: {
             trigger: containerRef.current,
             start: "top 80%",
             toggleActions: "play reverse play reverse",
+            invalidateOnRefresh: true
           },
         });
       });
     });
     return () => ctx.revert();
-  }, [containerRef]);
+  }, []);
 
   return (
     <>

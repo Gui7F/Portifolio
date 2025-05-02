@@ -1,5 +1,5 @@
 import React from "react";
-import { useEffect } from "react";
+import { useLayoutEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
@@ -19,7 +19,7 @@ const ProjectCard = ({ title, description, img , shortDescription, tag, linkDepl
     setModalIsOpen(true);
   };
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const ctx = gsap.context(() => {
       // Animation image card
       gsap.from(refImageCard.current, {
@@ -27,10 +27,12 @@ const ProjectCard = ({ title, description, img , shortDescription, tag, linkDepl
         opacity: 0,
         duration: 2,
         ease: "power4.inOut",
+        force3D: true,
         scrollTrigger: {
           trigger: refImageCard.current,
           start: "top 80%",
           toggleActions: "play reverse play reverse",
+          invalidateOnRefresh: true
         },
       })
        
@@ -40,10 +42,12 @@ const ProjectCard = ({ title, description, img , shortDescription, tag, linkDepl
         opacity: 0,
         duration : 1 ,
         ease : "elastic.inOut",
+        force3D: true,
         scrollTrigger : {
           trigger : refTitleCard.current,
           start : "top 100%",
-          toggleActions : "play reverse play reverse"
+          toggleActions : "play reverse play reverse",
+          invalidateOnRefresh: true
         } 
       })
     })

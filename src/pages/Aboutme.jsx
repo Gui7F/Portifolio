@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useLayoutEffect, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import { gsap } from "gsap";
@@ -17,17 +17,19 @@ const Aboutme = () => {
   const imageRef = useRef(null);
   const textRef = useRef(null);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const ctx = gsap.context(() => {
       gsap.from(imageRef.current, {
         x: -100,
         opacity: 0,
         duration: 1,
+        force3D: true,
         ease: "power2.out",
         scrollTrigger: {
           trigger: aboutSection.current,
           start: "top 40%",
           toggleActions: "play reverse play reverse",
+          invalidateOnRefresh: true
         },
       });
 
@@ -36,16 +38,18 @@ const Aboutme = () => {
         opacity: 0,
         duration: 1,
         ease: "power2.out",
+        force3D: true,
         scrollTrigger: {
           trigger: aboutSection.current,
           start: "top 40%",
           toggleActions: "play reverse play reverse",
+          invalidateOnRefresh : true
         },
       });
     }, aboutSection);
 
     return () => ctx.revert();
-  }, []);
+  }, [aboutSection]);
 
   return (
     <div

@@ -10,7 +10,7 @@ import ShinyText from "../components/ShinyText";
 // animations
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useEffect, useRef } from "react";
+import { useLayoutEffect, useRef } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -20,7 +20,7 @@ const Servicos = () => {
   const containerService = useRef(null);
   
   //Animaçoes para os primeiros services 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const ctx = gsap.context(() => {
       const titles = gsap.utils.toArray(".titleService")
       titles.forEach((el) => {
@@ -29,11 +29,13 @@ const Servicos = () => {
           rotate: 360,
           opacity: 0,
           duration: 1,
-          ease: "power4.inOut",
+          ease: "power2",
+          force3D: true ,
           scrollTrigger: {
             trigger: containerService.current,
             start: "top 40%",
             toggleActions: "play reverse play reverse",
+            invalidateOnRefresh: true
           },
       }) 
       });
@@ -44,10 +46,12 @@ const Servicos = () => {
           opacity: 0,
           duration: 1,
           ease: "elastic.inOut",
+          force3D: true,
           scrollTrigger: {
             trigger: containerService.current,
             start: "top 40%",
             toggleActions: "play reverse play reverse",
+            invalidateOnRefresh: true
           },
         });
       })
@@ -67,7 +71,7 @@ const Servicos = () => {
       
       <article className="lg:flex">
         <div className="lg:w-1/3 m-2 text-center border bg-black border-neutral-600 p-6  shadow-2xl shadow-slate-300 max-[480px]:mb-3">
-          <div className="titleService flex flex-col items-center">
+          <div className="titleService flex flex-col items-center" >
           <FontAwesomeIcon icon= {faLaptopCode} className=" align-middle 2xl:text-6xl text-[50px] text-slate-300 mb-2"  />
           <h2 className="text-slate-300 2xl:text-2xl text-[20px] mb-4">Frontend</h2>
           </div>
